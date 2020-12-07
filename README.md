@@ -4,5 +4,5 @@
 </p>
 
 <p align="left">
-  🦄 Skills: <strong>HTML5, CSS3, JavaScript, React js, React Native,Redux, Typescript, Nodejs.</strong>
+  🎃 Skills: <strong>HTML5, CSS3, JavaScript, React js, React Native,Redux, Typescript, Nodejs e Design UI/UX</strong>
 </p>
