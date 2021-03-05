@@ -6,4 +6,7 @@
 <p align="left">
   🎃 Skills: <strong>HTML5, CSS3, JavaScript, React js, React Native,Redux, Typescript, Nodejs and UI/UX Design. </strong>
 </p>
-      <img src="https://xesque.rocketseat.dev/platform/tech/reactjs.svg" />
+<div>
+<img src="https://xesque.rocketseat.dev/platform/tech/reactjs.svg" />
+<img src="https://xesque.rocketseat.dev/platform/tech/react-native.svg" />
+</div>
