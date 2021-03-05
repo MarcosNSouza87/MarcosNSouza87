@@ -22,4 +22,3 @@
   <img src="https://xesque.rocketseat.dev/platform/tech/javascript.svg" alt="Javascript"/>
   
 </div>
-<button type="button" class=".btn">teste</button>
