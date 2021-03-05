@@ -8,4 +8,5 @@
 </p>
 <a href="#" class="button big">
   <img src="https://github.com/MarcosNSouza87/MarcosNSouza87/blob/main/images/buymeacoffe.PNG" width="300px"/>
+  <img src="https://xesque.rocketseat.dev/platform/tech/reactjs.svg" />
 </a>
