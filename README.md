@@ -10,6 +10,6 @@
 <img src="https://xesque.rocketseat.dev/platform/tech/reactjs.svg" />
 <img src="https://xesque.rocketseat.dev/platform/tech/react-native.svg" />
   <img src="https://xesque.rocketseat.dev/platform/tech/typescript.svg" />
-<img src="https://xesque.rocketseat.dev/platform/tech/nodejs.svg" />
+<img src="https://xesque.rocketseat.dev/platform/tech/node.svg" />
   <img src="https://xesque.rocketseat.dev/platform/tech/javascript.svg" />
 </div>
