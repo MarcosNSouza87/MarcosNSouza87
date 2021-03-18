@@ -41,6 +41,6 @@
   <a href="https://www.outlook.com/nipfhire/" alt="Instagram">
   <img src="https://img.shields.io/badge/-Instagram-DF0174?style=for-the-badge&logo=instagram&logoColor=white&link=https://www.instagram.com/nipfhire/"/></a>
   
-   <a href="https://www.instagram.com/nipfhire/" alt="Whatsapp">
-  <img src="https://img.shields.io/badge/-Outlook-0078D4?style=for-the-badge&logo=outlook&logoColor=white&link=https://www.outlook.com/nipfhire/"/></a>
+   <a href="https://www.instagram.com/nipfhire/" alt="Outlook">
+  <img src="https://img.shields.io/badge/-Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=5513991179703"/></a>
 </p>  
