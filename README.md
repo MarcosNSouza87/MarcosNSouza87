@@ -1,5 +1,5 @@
 <p align="left"> 
-  Hello, my name is Marcos I am <strong>Front-end Developer</strong>.<br>
+  Hello, my name is Marcos I am <strong>FullStack Developer</strong>.<br>
   WORKING WITH REACT AND REACT NATIVE, AIMING TO ACQUIRE PROFESSIONAL EXPERIENCE AND MORE KNOWLEDGE IN THE INFORMATION TECHNOLOGY AREA, CONTRIBUTING TO GAINS AND DEVELOPING THE WORKPLACE THROUGH MY QUALIFICATIONS, DISPOSAL AND DETERMINATION.
   
 </p>
