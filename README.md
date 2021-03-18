@@ -38,9 +38,9 @@
   <a href="https://www.facebook.com/markos.nunnes.87/" alt="Facebook">
   <img src="https://img.shields.io/badge/-Facebook-3b5998?style=for-the-badge&logo=facebook&logoColor=white&link=https://www.facebook.com/markos.nunnes.87/"/></a>
 
-  <a href="https://www.instagram.com/nipfhire/" alt="Instagram">
+  <a href="https://www.outlook.com/nipfhire/" alt="Instagram">
   <img src="https://img.shields.io/badge/-Instagram-DF0174?style=for-the-badge&logo=instagram&logoColor=white&link=https://www.instagram.com/nipfhire/"/></a>
   
-   <a href="https://www.instagram.com/nipfhire/" alt="Instagram">
-  <img src="https://img.shields.io/badge/-Instagram-DF0174?style=for-the-badge&logo=instagram&logoColor=white&link=https://www.instagram.com/nipfhire/"/></a>
+   <a href="https://www.instagram.com/nipfhire/" alt="Whatsapp">
+  <img src="https://img.shields.io/badge/-Outlook-0078D4?style=for-the-badge&logo=outlook&logoColor=white&link=https://www.outlook.com/nipfhire/"/></a>
 </p>  
