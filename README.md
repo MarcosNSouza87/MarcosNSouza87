@@ -1,11 +1,10 @@
 <p align="left"> 
-  Hello, my name is Marcos I am <strong>FullStack Developer</strong>.<br>
-  WORKING WITH REACT AND REACT NATIVE, AIMING TO ACQUIRE PROFESSIONAL EXPERIENCE AND MORE KNOWLEDGE IN THE INFORMATION TECHNOLOGY AREA, CONTRIBUTING TO GAINS AND DEVELOPING THE WORKPLACE THROUGH MY QUALIFICATIONS, DISPOSAL AND DETERMINATION.
-  
+  Hello, my name is Marcos I am <strong>FullStack Developer</strong> and <strong>UI/UX Designer</strong>.<br>
+  I am computer engineer since 2017.
 </p>
 
 <p align="left">
-  🚀 Tecnologias que utilizo!
+  🚀 technologies i use!
 </p>
 <div>
   
@@ -23,3 +22,18 @@
   <img src="https://xesque.rocketseat.dev/platform/tech/javascript.svg" alt="Javascript"/>
   
 </div>
+
+<p align="left">
+  💼 Tools: <strong>Visual Studio Code, PhotoShop, Figma, Inkscape e GitHub.</strong>
+</p>
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/marcosnsouza" alt="Linkedin">
+  <img src="https://img.shields.io/badge/-Linkedin-0e76a8?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/marcosnsouza" /></a>
+
+  <a href="https://www.facebook.com/markos.nunnes.87/" alt="Facebook">
+  <img src="https://img.shields.io/badge/-Facebook-3b5998?style=for-the-badge&logo=facebook&logoColor=white&link=https://www.facebook.com/markos.nunnes.87/"/></a>
+
+  <a href="https://www.instagram.com/nipfhire/" alt="Instagram">
+  <img src="https://img.shields.io/badge/-Instagram-DF0174?style=for-the-badge&logo=instagram&logoColor=white&link=https://www.instagram.com/nipfhire/"/></a>
+</p>  
