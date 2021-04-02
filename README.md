@@ -44,3 +44,5 @@
    <a href="https://api.whatsapp.com/send?phone=5513991179703" alt="Whatsapp">
   <img src="https://img.shields.io/badge/-Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=5513991179703"/></a>
 </p>  
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MarcosNSouza87)](https://github.com/anuraghazra/github-readme-stats)
