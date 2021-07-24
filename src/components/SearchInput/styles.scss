@@ -1,0 +1,36 @@
+.search-container {
+  color: #666360;
+  background-color: #020202 !important;
+  width: 100%;
+  max-width: 650px;
+  margin: 10px 0;
+  div {
+    border-radius: 3px;
+    border: 2px solid var(--color-gray-b);
+    display: flex;
+    align-items: center;
+    transition: all 0.4s;
+    input {
+      height: 50px;
+      flex: 1;
+      background: transparent;
+      border: 0;
+      color: var(--color-white-a);
+      font-size: 1.1rem;
+      outline: none;
+      &::placeholder {
+        color: var(--color-gray-a);
+        font-weight: 400;
+      }
+      &::-webkit-search-cancel-button {
+
+        cursor: pointer;
+        margin-right: 14px;
+      }
+    }
+    svg {
+      margin-right: 14px;
+      margin-left: 14px;
+    }
+  }
+}
