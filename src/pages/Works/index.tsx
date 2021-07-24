@@ -1,10 +1,7 @@
 import Header from "../../components/Header";
 import "./styles.scss";
-import imgArrowLeft from "../../assets/images/arrow-left.svg";
-import imgArrowRight from "../../assets/images/arrow-right.svg";
 import SearchInput from "../../components/SearchInput";
 import Card from '../../components/CardProject'
-import { Link } from "react-router-dom";
 
 export default function WorksPage() {
   return (
