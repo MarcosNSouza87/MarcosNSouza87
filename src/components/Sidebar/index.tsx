@@ -1,13 +1,13 @@
 import ButtonTheme from "./ButtonTheme";
 import SocialMedia from "./social-media-menu";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import "./styles.scss";
 
 export default function Sidebar() {
   return (
     <aside className="sidebar">
-      <div className="menu">
-        <ButtonTheme theme={true} />
+      <ButtonTheme theme={true} />
+      {/* <div className="menu">
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -19,7 +19,7 @@ export default function Sidebar() {
             <Link to="/works">Works</Link>
           </li>
         </ul>
-      </div>
+      </div> */}
       <SocialMedia github="/" linkedin="/" behance="/" />
     </aside>
   );

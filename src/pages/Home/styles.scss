@@ -1,5 +1,10 @@
 .homepage{
   width: 100%;
   color: var(--color-white-a);
-  background-color: var(--color-dark-a);
+  display: flex;
+  flex-direction: column;
+  main.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

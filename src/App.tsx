@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import AboutPage from "./pages/About";
 import HomePage from "./pages/Home";
-import WorksPage from "./pages/Works";
+// import AboutPage from "./pages/About";
+// import WorksPage from "./pages/Works";
 import "./styles/global.scss";
 
 export function App() {
@@ -11,8 +11,8 @@ export function App() {
       <Sidebar />
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/about" exact component={AboutPage} />
-        <Route path="/works" exact component={WorksPage} />
+        {/* <Route path="/about" exact component={AboutPage} />
+        <Route path="/works" exact component={WorksPage} /> */}
       </Switch>
     </BrowserRouter>
   );
