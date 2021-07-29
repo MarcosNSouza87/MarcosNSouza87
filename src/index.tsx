@@ -4,6 +4,7 @@ import "./styles/global.ts";
 import { App } from "./App";
 import { ThemeProvider } from "styled-components";
 import dark from "./styles/theme/dark";
+import light from "./styles/theme/light";
 import GlobalStyle from "./styles/global";
 
 ReactDOM.render(

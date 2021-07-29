@@ -19,9 +19,9 @@ export default function ButtonTheme(props: ButtonThemeProps) {
       }}
     >
       {dark ? (
-        <IconThemeLight color="#fefefe" />
+        <IconThemeDark color="" />
       ) : (
-        <IconThemeDark color="#7a7a7a" />
+        <IconThemeLight color="" />
       )}
     </ButtonThemeContainer>
   );

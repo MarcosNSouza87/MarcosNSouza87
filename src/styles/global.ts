@@ -9,7 +9,6 @@ export default createGlobalStyle`
 
 body,
 input,
-button,
 textarea {
   font-family: "Roboto";
   font-size: 1rem;
@@ -20,6 +19,9 @@ textarea {
   background-color: ${(props)=> props.theme.primary.dark};
   background-size: cover;
 }
+body{
+}
+
 #root {
   width: 100vw;
   display: flex;

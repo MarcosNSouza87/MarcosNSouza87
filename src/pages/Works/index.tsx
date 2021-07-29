@@ -3,36 +3,7 @@ import "./styles.ts";
 import SearchInput from "../../components/SearchInput";
 import Card from "../../components/CardProject";
 import { WorkMainContainer, WorksContainer } from "./styles";
-
-const listCards = [
-  {
-    id: 1,
-    imgLogo: "",
-    title: "Projeto 1",
-    description: "este é um projeto de testes",
-    tecnologies: "web . React . Typescript",
-    developer_link: "/1",
-    production_link: "/",
-  },
-  {
-    id: 2,
-    imgLogo: "",
-    title: "Projeto 2",
-    description: "este é um projeto de testes",
-    tecnologies: "web . React . Typescript",
-    developer_link: "/1",
-    production_link: "/",
-  },
-  {
-    id: 3,
-    imgLogo: "",
-    title: "Projeto 3",
-    description: "este é um projeto de testes",
-    tecnologies: "web . React . Typescript",
-    developer_link: "/1",
-    production_link: "/1",
-  },
-];
+import { listCards } from "../../services/List";
 
 export default function WorksPage() {
   return (
