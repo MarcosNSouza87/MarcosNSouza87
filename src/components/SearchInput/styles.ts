@@ -1,4 +1,6 @@
-.search-container {
+import styled from "styled-components";
+
+export const SearchInputContainer = styled.div`
   color: #666360;
   background-color: #020202 !important;
   width: 100%;
@@ -6,7 +8,7 @@
   margin: 10px 0;
   div {
     border-radius: 3px;
-    border: 2px solid var(--color-gray-b);
+    border: 2px solid ${(props) => props.theme.secondary.gray};
     display: flex;
     align-items: center;
     transition: all 0.4s;
@@ -15,15 +17,14 @@
       flex: 1;
       background: transparent;
       border: 0;
-      color: var(--color-white-a);
+      color: ${(props) => props.theme.primary.white};
       font-size: 1.1rem;
       outline: none;
       &::placeholder {
-        color: var(--color-gray-a);
+        color: ${(props) => props.theme.primary.gray};
         font-weight: 400;
       }
       &::-webkit-search-cancel-button {
-
         cursor: pointer;
         margin-right: 14px;
       }
@@ -33,4 +34,4 @@
       margin-left: 14px;
     }
   }
-}
+`;

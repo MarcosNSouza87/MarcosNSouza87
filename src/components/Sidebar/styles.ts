@@ -1,4 +1,6 @@
-.sidebar {
+import styled from "styled-components";
+
+export const SidebarContainer = styled.aside`
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -6,7 +8,7 @@
   flex-direction: column;
   width: 120px;
   height: 100vh;
-  background-color: var(--color-dark-a);
+  background-color:  ${(props) => props.theme.primary.dark};
   z-index: 10;
   box-shadow: 0px 0px 12px #101010;
   div.menu {
@@ -33,13 +35,13 @@
         text-decoration: none;
         font-size: 24px;
         font-weight: 500;
-        border-left: 3px solid var(--color-dark-a);
-        color: var(--color-white-a);
+        border-left: 3px solid  ${(props) => props.theme.primary.dark};
+        color:  ${(props) => props.theme.primary.white};
         &:hover {
-          color: var(--color-primary);
-          border-left: 3px solid var(--color-primary);
+          color:  ${(props) => props.theme.primary.primary};
+          border-left: 3px solid  ${(props) => props.theme.primary.primary};
         }
       }
     }
   }
-}
+`;

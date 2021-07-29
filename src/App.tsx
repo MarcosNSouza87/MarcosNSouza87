@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar";
 import HomePage from "./pages/Home";
 // import AboutPage from "./pages/About";
 // import WorksPage from "./pages/Works";
-import "./styles/global.scss";
+import "./styles/global.ts";
 
 export function App() {
   return (

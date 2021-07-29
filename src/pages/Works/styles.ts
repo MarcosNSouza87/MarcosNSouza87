@@ -1,8 +1,10 @@
-.works {
-  color: var(--color-white-a);
-}
+import styled from "styled-components";
 
-main {
+export const WorksContainer = styled.div`
+  color: var(--color-white-a);
+`;
+
+export const WorkMainContainer = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,4 +36,4 @@ main {
       flex-direction: column;
     }
   }
-}
+`;

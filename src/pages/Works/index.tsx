@@ -1,7 +1,8 @@
 import Header from "../../components/Header";
-import "./styles.scss";
+import "./styles.ts";
 import SearchInput from "../../components/SearchInput";
 import Card from "../../components/CardProject";
+import { WorkMainContainer, WorksContainer } from "./styles";
 
 const listCards = [
   {
@@ -35,20 +36,20 @@ const listCards = [
 
 export default function WorksPage() {
   return (
-    <div className="works">
+    <WorksContainer>
       <Header titlePage="Works" />
-      <main>
+      <WorkMainContainer>
         <SearchInput />
         <div className="row">
           <div className="slider">
             <div className="row__posters" id="row_pst">
               {listCards.map((item) => (
-                <Card item={item} key={item.id}/>
+                <Card item={item} key={item.id} />
               ))}
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </WorkMainContainer>
+    </WorksContainer>
   );
 }

@@ -1,16 +1,17 @@
 import Header from "../../components/Header";
-import About from '../About'
-import WorksPage from '../Works'
-import "./styles.scss";
+import About from "../About";
+import WorksPage from "../Works";
+import { HomeMainContent, HomePageContainer } from "./styles";
+import "./styles.ts";
 
 export default function HomePage() {
   return (
-    <div className="homepage">
+    <HomePageContainer>
       <Header titlePage="Portfolio" />
-      <main className="content">
-        <About/>
-        <WorksPage/>
-      </main>
-    </div>
+      <HomeMainContent>
+        <About />
+        <WorksPage />
+      </HomeMainContent>
+    </HomePageContainer>
   );
 }

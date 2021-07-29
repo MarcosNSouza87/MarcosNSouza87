@@ -1,9 +1,11 @@
 import Header from "../../components/Header";
-import './styles.scss'
+import { AboutContainer } from "./styles";
+import './styles.ts'
 export default function AboutPage() {
   return (
-    <div className="about">
+    <AboutContainer className="about">
       <Header titlePage="About" />
-    </div>
+    </AboutContainer>
   );
 }
+

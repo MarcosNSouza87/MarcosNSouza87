@@ -1,4 +1,6 @@
-header.header-content {
+import styled from "styled-components";
+
+export const HeaderContainer = styled.header`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -17,7 +19,7 @@ header.header-content {
     h3 span {
       font-weight: 600;
       font-size: 40px;
-      color: var(--color-primary);
+      color: ${(props) => props.theme.primary.primary};
     }
   }
 }
@@ -88,4 +90,5 @@ header.header-content {
       }
     }
   }
-}
+
+`;

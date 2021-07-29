@@ -1,7 +1,8 @@
 //import {ReactNode} from 'react'
 import IconGithub from "../../assets/icons/IconGithub";
 import IconLink from "../../assets/icons/IconLink";
-import "./styles.scss";
+import { Card } from "./styles";
+import "./styles.ts";
 
 type CardItemProps = {
   //   imgCard:ReactNode;
@@ -18,7 +19,7 @@ type CardProjectProps = {
 
 export default function CardProject({ item }: CardProjectProps) {
   return (
-    <div className="card">
+    <Card>
       <img src="" alt="" />
       <div className="info">
         <div className="description">
@@ -37,6 +38,6 @@ export default function CardProject({ item }: CardProjectProps) {
           <IconLink color="" />
         </a>
       </div>
-    </div>
+    </Card>
   );
 }

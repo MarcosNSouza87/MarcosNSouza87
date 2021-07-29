@@ -1,20 +1,20 @@
-import "./styles.scss";
+import { HeaderContainer } from "./styles";
+import "./styles.ts";
 
 type HeaderProps = {
   titlePage: string;
 };
 
 export default function Header(props: HeaderProps) {
-  
   return (
-    <header className="header-content">
+    <HeaderContainer>
       <nav>
         <h3>
           <span>{props.titlePage.substr(0, 1)}</span>
           {props.titlePage.substr(1)}
         </h3>
       </nav>
-    </header>
+    </HeaderContainer>
   );
 }
 

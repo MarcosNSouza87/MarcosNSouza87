@@ -1,9 +1,11 @@
-div.card {
+import styled from 'styled-components'
+
+export const Card = styled.div`
   display: grid;
   grid-template-columns: 170px 280px 150px;
   width: 600px;
   height: 170px;
-  background: #181818;
+  background: ${(props)=> props.theme.primary.dark};
   box-shadow: 0px 0px 6px 7px rgba(0, 0, 0, 0.25);
   margin: 10px;
   .info {
@@ -29,21 +31,21 @@ div.card {
     flex-direction: row;
     gap: 10px;
     a.dev {
-      background-color: var(--color-ternary-b);
+      background-color: ${(props)=> props.theme.primary.secondary};
       svg {
-        fill: #fefefe;
+        fill: ${(props)=> props.theme.primary.white};
       }
 
     }
     a.prod {
-      background-color: #fd1b24;
+      background-color: ${(props)=> props.theme.primary.primary};
       svg {
-        stroke: #fefefe;
+        stroke: ${(props)=> props.theme.primary.white};
       }
     }
     a.disable {
-      color: #7a7a7a;
-      background-color: #414141;
+      color: ${(props)=> props.theme.primary.gray};
+      background-color: ${(props)=> props.theme.secondary.gray};
       &:hover{
         cursor: not-allowed;
       }
@@ -55,7 +57,7 @@ div.card {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      color: #f5f5f5;
+      color: ${(props)=> props.theme.secondary.white};
       text-decoration: none;
       padding: 10px;
     }
@@ -65,4 +67,4 @@ div.card {
       margin-top: 25px;
     }
   }
-}
+`;
