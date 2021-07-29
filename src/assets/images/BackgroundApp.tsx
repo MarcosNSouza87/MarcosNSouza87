@@ -5,7 +5,7 @@ type Props = {
   stroke: string;
 };
 
-export default function Background({ fill,stroke }: Props) {
+export default function BackgroundApp({ fill,stroke }: Props) {
   return (
     <svg
       width="1905"

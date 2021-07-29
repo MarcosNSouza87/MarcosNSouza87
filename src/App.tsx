@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Background from "./assets/images/BackgroundApp";
 import Sidebar from "./components/Sidebar";
 import HomePage from "./pages/Home";
 // import AboutPage from "./pages/About";
