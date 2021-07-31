@@ -6,10 +6,12 @@ import HomePage from "./pages/Home";
 // import WorksPage from "./pages/Works";
 import "./styles/global.ts";
 
+
+
 export function App() {
   return (
     <BrowserRouter>
-      <Sidebar />
+      <Sidebar behance="marcosnunes16"  github="MarcosNSouza87" linkedin="marcosnsouza/"/>
       <Switch>
         <Route path="/" exact component={HomePage} />
         {/* <Route path="/about" exact component={AboutPage} />

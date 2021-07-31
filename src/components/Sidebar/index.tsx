@@ -3,8 +3,13 @@ import SocialMedia from "./social-media-menu";
 import { SidebarContainer } from "./styles";
 //import { Link } from "react-router-dom";
 import "./styles.ts";
+type SidebarProps = {
+  behance: string;
+  github: string;
+  linkedin: string;
+};
 
-export default function Sidebar() {
+export default function Sidebar({ behance, github, linkedin }: SidebarProps) {
   return (
     <SidebarContainer>
       <ButtonTheme theme={true} />
@@ -21,7 +26,7 @@ export default function Sidebar() {
           </li>
         </ul>
       </div> */}
-      <SocialMedia github="/" linkedin="/" behance="/" />
+      <SocialMedia github={github} linkedin={linkedin} behance={behance} />
     </SidebarContainer>
   );
 }
