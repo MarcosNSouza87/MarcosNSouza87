@@ -1,22 +1,23 @@
 import Header from "../../components/Header";
 import "./styles.ts";
 import SearchInput from "../../components/SearchInput";
-import Card from "../../components/CardProject";
 import { WorkMainContainer, WorksContainer } from "./styles";
 import { listCards } from "../../services/List";
+import {  useState } from "react";
+import { CardList } from "../../components/CardList";
 
 export default function WorksPage() {
+  const [query, setQuery] = useState("");
+
   return (
     <WorksContainer>
       <Header titlePage="Works" />
       <WorkMainContainer>
-        <SearchInput />
+        <SearchInput onChangeInput={setQuery}/>
         <div className="row">
           <div className="slider">
             <div className="row__posters" id="row_pst">
-              {listCards.map((item) => (
-                <Card item={item} key={item.id} />
-              ))}
+              <CardList cards={listCards} query={query} />
             </div>
           </div>
         </div>
