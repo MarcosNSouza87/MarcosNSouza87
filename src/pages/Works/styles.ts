@@ -15,6 +15,7 @@ export const WorkMainContainer = styled.main`
   flex-direction: row;
   .slider {
     height: 640px;
+    width:632px;
     flex-wrap: nowrap;
     overflow-x: auto;
     &::-webkit-scrollbar {

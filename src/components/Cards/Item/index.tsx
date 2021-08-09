@@ -1,6 +1,6 @@
 //import {ReactNode} from 'react'
-import IconGithub from "../../assets/icons/IconGithub";
-import IconLink from "../../assets/icons/IconLink";
+import IconGithub from "../../../assets/icons/IconGithub";
+import IconLink from "../../../assets/icons/IconLink";
 import { Card } from "./styles";
 import "./styles.ts";
 
@@ -26,7 +26,7 @@ export default function CardProject({ item }: CardProjectProps) {
           <h3 className="title">{item.title}</h3>
           {item.description}
         </div>
-        <span className="tecs">Web . React . Typescript</span>
+        <span className="tecs">{item.tecnologies}</span>
       </div>
       <div className="links">
         <a href={`https://github.com/${item.developer_link}`} className={`dev ${item.developer_link === '/' && 'disable'}`}>

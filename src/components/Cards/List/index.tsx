@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import Card  from "../CardProject";
+import Card from "../Item";
 
 type CardProps = {
   id: number;
@@ -16,7 +16,16 @@ type CardListProps = {
 };
 
 const filter = (cards: CardProps[], query: string) => {
-  return cards.filter((card) => card.title.toLowerCase().includes(query) );
+  const cardList = cards;
+
+  const find = cardList.filter(function (result) {
+    return (
+      result.title.toLowerCase().includes(query.toLowerCase()) ||
+      result.tecnologies.toLowerCase().includes(query.toLowerCase())
+    );
+  });
+  console.log(find);
+  return find;
 };
 
 export const CardList = ({ cards, query }: CardListProps) => {

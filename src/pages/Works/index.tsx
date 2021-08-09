@@ -4,7 +4,7 @@ import SearchInput from "../../components/SearchInput";
 import { WorkMainContainer, WorksContainer } from "./styles";
 import { listCards } from "../../services/List";
 import {  useState } from "react";
-import { CardList } from "../../components/CardList";
+import { CardList } from "../../components/Cards/List";
 
 export default function WorksPage() {
   const [query, setQuery] = useState("");
