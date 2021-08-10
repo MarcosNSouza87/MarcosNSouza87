@@ -1,9 +1,10 @@
+import backImgWhite from '../../assets/images/background_white_theme.svg'
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
   title: "light",
   primary: {
     primary: "#fd1824", //
-    secondary: "#006eef", // 
+    secondary: "#006eef", //
     white: "#181818", // w-a
     gray: "#7a7a7a", //g-a
     dark: "#fefefe", // d-a
@@ -15,6 +16,11 @@ export default {
     gray: "#414141",
     dark: "#f5f5f5",
   },
+  inputGroup: {
+    border: "#7a7a7a",
+    background: "#fff",
+  },
+  backgroundImgUrl: backImgWhite,
 };
 
 //:root {

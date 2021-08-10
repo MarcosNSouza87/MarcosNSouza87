@@ -1,4 +1,3 @@
-
 import IconSearch from "../../assets/icons/IconSearch";
 import { SearchInputContainer } from "./styles";
 import "./styles.ts";
@@ -13,7 +12,7 @@ export default function SearchInput(props:SearchIputProps) {
   return (
     <SearchInputContainer>
       <div>
-        <IconSearch color="#FEFEFE" />
+        <IconSearch color="" />
         <input
           onChange={(ev)=>props.onChangeInput(ev.target.value)}
           type="search"

@@ -219,7 +219,7 @@ export default function BackgroundApp({ fill,stroke }: Props) {
           rx="150"
           ry="156.356"
           transform="rotate(45 810.626 549.626)"
-          fill="#2B2B2B"
+          fill={fill}
         />
       </mask>
       <g mask="url(#mask0)">
@@ -259,7 +259,7 @@ export default function BackgroundApp({ fill,stroke }: Props) {
           rx="47.9675"
           ry="50"
           transform="rotate(-45 1835.27 69.2735)"
-          fill="#2B2B2B"
+          fill={fill}
         />
       </mask>
       <g mask="url(#mask1)">

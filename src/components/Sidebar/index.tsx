@@ -7,12 +7,13 @@ type SidebarProps = {
   behance: string;
   github: string;
   linkedin: string;
+  changeTheme(dark:boolean):void;
 };
 
-export default function Sidebar({ behance, github, linkedin }: SidebarProps) {
+export default function Sidebar({ behance, github, linkedin,changeTheme }: SidebarProps) {
   return (
     <SidebarContainer>
-      <ButtonTheme theme={true} />
+      <ButtonTheme setTheme={changeTheme} />
       {/* <div className="menu">
         <ul>
           <li>

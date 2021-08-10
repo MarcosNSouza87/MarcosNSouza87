@@ -2,21 +2,21 @@ import { useState } from "react";
 import IconThemeDark from "../../../assets/icons/IconThemeDark";
 import { IconThemeLight } from "../../../assets/icons/IconThemeLight";
 import { ButtonThemeContainer } from "./styles";
-
 import "./styles.ts";
 
-type ButtonThemeProps = {
-  theme: boolean;
-  //  setTheme(value:boolean):void;
-};
+interface ButtonThemeProps{
+  setTheme(theme:boolean):void;
+}
 
-export default function ButtonTheme(props: ButtonThemeProps) {
+export default function ButtonTheme(props:ButtonThemeProps) {
   const [dark, setDark] = useState(false);
+  const toggleTheme = () => {
+    setDark((prev) => !prev);
+    props.setTheme(!dark);
+  }
   return (
     <ButtonThemeContainer
-      onClick={() => {
-        setDark((prev) => !prev);
-      }}
+      onClick={() => toggleTheme()}
     >
       {dark ? (
         <IconThemeDark color="" />

@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import backgroundImg from "../assets/images/background.svg";
+
 export default createGlobalStyle`
 * {
   margin: 0;
@@ -14,12 +14,12 @@ textarea {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-image: url(${backgroundImg});
-  background-color: ${(props)=> props.theme.primary.dark};
   background-size: cover;
 }
 body{
+  color: #212529;
+  background-image: url(${(props)=> props.theme.backgroundImgUrl});
+  background-color: ${(props)=> props.theme.primary.dark};
 }
 
 #root {

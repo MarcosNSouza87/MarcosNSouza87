@@ -1,9 +1,11 @@
+import backImgDark from "../../assets/images/background_dark_theme.svg";
+
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
   title: "dark",
   primary: {
     primary: "#fd1824", //
-    secondary: "#006eef", // 
+    secondary: "#006eef", //
     white: "#fefefe", // w-a
     gray: "#7a7a7a", //g-a
     dark: "#181818", // d-a
@@ -15,6 +17,11 @@ export default {
     gray: "#414141",
     dark: "#1c1c1c",
   },
+  inputGroup: {
+    border: "#666360",
+    background: "#020202",
+  },
+  backgroundImgUrl: backImgDark,
 };
 
 //:root {

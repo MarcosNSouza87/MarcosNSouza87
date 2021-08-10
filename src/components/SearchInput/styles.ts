@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const SearchInputContainer = styled.div`
-  color: #666360;
-  background-color: #020202 !important;
+  color: ${(props)=>props.theme.inputGroup.border};
+  background-color: ${(props)=>props.theme.inputGroup.background};
   width: 100%;
   max-width: 650px;
   margin: 10px 0;
@@ -30,6 +30,7 @@ export const SearchInputContainer = styled.div`
       }
     }
     svg {
+      stroke:${(props)=>props.theme.primary.white};
       margin-right: 14px;
       margin-left: 14px;
     }
