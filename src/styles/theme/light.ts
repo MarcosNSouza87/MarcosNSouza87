@@ -6,14 +6,14 @@ export default {
     primary: "#fd1824", //
     secondary: "#006eef", //
     white: "#181818", // w-a
-    gray: "#7a7a7a", //g-a
+    gray: "#414141", //g-a
     dark: "#fefefe", // d-a
   },
   secondary: {
     primary: "#ff0141",
     secondary: "#01c4ff",
     white: "#1c1c1c",
-    gray: "#414141",
+    gray: "#7a7a7a",
     dark: "#f5f5f5",
   },
   inputGroup: {

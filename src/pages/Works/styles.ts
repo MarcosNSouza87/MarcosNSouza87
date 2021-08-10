@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const WorksContainer = styled.div`
-  color: var(--color-white-a);
+  color: var(--color-white);
 `;
 
 export const WorkMainContainer = styled.main`
@@ -23,13 +23,13 @@ export const WorkMainContainer = styled.main`
     }
 
     &::-webkit-scrollbar-track {
-      background-color: #101010;
+      background-color: ${(props)=> props.theme.secondary.dark};
       border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
       border-radius: 10px;
-      background-color: var(--color-gray-b);
+      background-color: ${(props)=>props.theme.secondary.gray};
     }
 
     .row__posters {
