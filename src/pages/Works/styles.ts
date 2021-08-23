@@ -14,7 +14,7 @@ export const WorkMainContainer = styled.main`
   display: flex;
   flex-direction: row;
   .slider {
-    height: 640px;
+    height: 570px;
     width:632px;
     flex-wrap: nowrap;
     overflow-x: auto;

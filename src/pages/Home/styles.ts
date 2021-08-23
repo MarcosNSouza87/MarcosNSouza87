@@ -10,4 +10,8 @@ export const HomePageContainer = styled.div`
 export const HomeMainContent = styled.main`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width: 1350px) {
+      display: flex;
+      flex-direction:column;
+    }
 `;

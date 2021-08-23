@@ -3,16 +3,25 @@ import "./styles.ts";
 
 type HeaderProps = {
   titlePage: string;
+  subTitlePage: string;
 };
 
-export default function Header(props: HeaderProps) {
+export default function Header({ titlePage, subTitlePage }: HeaderProps) {
   return (
     <HeaderContainer>
       <nav>
-        <h3>
-          <span>{props.titlePage.substr(0, 1)}</span>
-          {props.titlePage.substr(1)}
-        </h3>
+        {titlePage.length > 0 && (
+          <h3>
+            <span>{titlePage.substr(0, 1)}</span>
+            {titlePage.substr(1)}
+          </h3>
+        )}
+        {subTitlePage.length > 0 && (
+          <h4>
+            <span>{subTitlePage.substr(0, 1)}</span>
+            {subTitlePage.substr(1)}
+          </h4>
+        )}
       </nav>
     </HeaderContainer>
   );

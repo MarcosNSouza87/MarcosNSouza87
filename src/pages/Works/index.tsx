@@ -11,7 +11,7 @@ export default function WorksPage() {
 
   return (
     <WorksContainer>
-      <Header titlePage="Works" />
+      <Header titlePage="" subTitlePage="Projetos"/>
       <WorkMainContainer>
         <SearchInput onChangeInput={setQuery}/>
         <div className="row">

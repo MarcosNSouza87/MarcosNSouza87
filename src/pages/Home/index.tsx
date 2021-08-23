@@ -7,7 +7,7 @@ import "./styles.ts";
 export default function HomePage() {
   return (
     <HomePageContainer>
-      <Header titlePage="Portfolio" />
+      <Header titlePage="Portfolio" subTitlePage=""/>
       <HomeMainContent>
         <About />
         <WorksPage />

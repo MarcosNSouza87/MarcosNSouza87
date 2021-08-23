@@ -3,8 +3,8 @@ import backImgWhite from '../../assets/images/background_white_theme.svg'
 export default {
   title: "light",
   primary: {
-    primary: "#fd1824", //
-    secondary: "#006eef", //
+    primary: "#ff0141", //
+    secondary: "#01c4ff", //
     white: "#181818", // w-a
     gray: "#414141", //g-a
     dark: "#fefefe", // d-a

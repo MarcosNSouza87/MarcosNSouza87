@@ -6,13 +6,14 @@ export const MenuSocialMediaContainer = styled.div`
   list-style: none;
   display: flex;
   flex-direction: column;
-  transition: 0.2s;
+  transition: all 0.3s;
   svg > path {
     fill:  ${(props) => props.theme.primary.white};
   }
   a:hover {
-    transition: 0.2s;
+    transition: all 0.3s;
     svg > path {
+      transition: all 0.3s;
       fill: ${(props) => props.theme.primary.primary};
     }
   }

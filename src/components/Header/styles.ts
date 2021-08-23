@@ -10,16 +10,25 @@ export const HeaderContainer = styled.header`
     flex-direction: row;
     justify-content: space-between;
     // min-width: 1400px;
-    padding: 10px 124px;
+    padding: 20px 124px;
     width: 100%;
     h3 {
       font-weight: 600;
       font-size: 35px;
+      span {
+        font-weight: 600;
+        font-size: 40px;
+        color: ${(props) => props.theme.primary.primary};
+      }
     }
-    h3 span {
-      font-weight: 600;
-      font-size: 40px;
-      color: ${(props) => props.theme.primary.primary};
+    h4 {
+      font-weight:500;
+      font-size:25px;
+      span{
+        font-weight:500;
+        font-size:28px;
+        color: ${(props) => props.theme.primary.primary};
+      }
     }
   }
 }

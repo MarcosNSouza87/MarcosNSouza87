@@ -14,9 +14,10 @@ textarea {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  background-size: cover;
+  transition: all 0.2s;
 }
 body{
+  background-size: cover;
   color: #212529;
   background-image: url(${(props)=> props.theme.backgroundImgUrl});
   background-color: ${(props)=> props.theme.primary.dark};
