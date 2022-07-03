@@ -1,6 +1,6 @@
 import Header from "../../components/Header";
-import About from "../About";
-import WorksPage from "../Works";
+import About from "./About";
+import WorksPage from "./Works";
 import { HomeMainContent, HomePageContainer } from "./styles";
 import "./styles.ts";
 

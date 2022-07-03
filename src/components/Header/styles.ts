@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
     flex-direction: row;
     justify-content: space-between;
     // min-width: 1400px;
-    padding: 20px 124px;
+    padding: 20px 113px;
     width: 100%;
     h3 {
       font-weight: 600;

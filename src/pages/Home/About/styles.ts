@@ -67,6 +67,9 @@ export const AboutContainer = styled.div`
 
     .aboutme {
       padding: 0 100px;
+      p {
+        margin-left: 15px;
+      }
       button {
         padding: 10px 20px;
         color: ${(props) => props.theme.secondary.white};

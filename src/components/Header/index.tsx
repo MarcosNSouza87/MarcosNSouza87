@@ -12,14 +12,14 @@ export default function Header({ titlePage, subTitlePage }: HeaderProps) {
       <nav>
         {titlePage.length > 0 && (
           <h3>
-            <span>{titlePage.substr(0, 1)}</span>
-            {titlePage.substr(1)}
+            <span>{titlePage.substring(0, 1)}</span>
+            {titlePage.substring(1)}
           </h3>
         )}
         {subTitlePage.length > 0 && (
           <h4>
-            <span>{subTitlePage.substr(0, 1)}</span>
-            {subTitlePage.substr(1)}
+            <span>{subTitlePage.substring(0, 1)}</span>
+            {subTitlePage.substring(1)}
           </h4>
         )}
       </nav>
