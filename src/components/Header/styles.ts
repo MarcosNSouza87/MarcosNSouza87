@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"; 
 
 export const HeaderContainer = styled.header`
   display: flex;
@@ -17,17 +17,15 @@ export const HeaderContainer = styled.header`
       font-size: 35px;
       span {
         font-weight: 600;
-        font-size: 40px;
-        color: ${(props) => props.theme.primary.primary};
-      }
+        font-size: 40px; 
+      } 
     }
     h4 {
       font-weight:500;
       font-size:25px;
       span{
         font-weight:500;
-        font-size:28px;
-        color: ${(props) => props.theme.primary.primary};
+        font-size:28px; 
       }
     }
   }

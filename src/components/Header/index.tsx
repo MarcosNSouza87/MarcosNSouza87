@@ -1,30 +1,58 @@
-import { HeaderContainer } from "./styles";
-import "./styles.ts";
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { HeaderContainer } from './styles'
+import './styles.ts'
 
 type HeaderProps = {
-  titlePage: string;
-  subTitlePage: string;
-};
+	titlePage: string
+	subTitlePage: string
+}
 
 export default function Header({ titlePage, subTitlePage }: HeaderProps) {
-  return (
-    <HeaderContainer>
-      <nav>
-        {titlePage.length > 0 && (
-          <h3>
-            <span>{titlePage.substring(0, 1)}</span>
-            {titlePage.substring(1)}
-          </h3>
-        )}
-        {subTitlePage.length > 0 && (
-          <h4>
-            <span>{subTitlePage.substring(0, 1)}</span>
-            {subTitlePage.substring(1)}
-          </h4>
-        )}
-      </nav>
-    </HeaderContainer>
-  );
+	// create a const color and set the color espectral variant to it
+  const values = useMemo(() => {
+    return [
+      {r:255,g:0,b:0},
+      {r:255,g:0,b:115},
+      {r:255,g:0,b:175},
+      {r:255,g:0,b:255},
+      {r:160,g:0,b:255},
+      {r:115,g:0,b:255},
+      {r:0,g:115,b:255},
+      {r:0,g:175,b:255},
+      {r:0,g:255,b:255},
+      {r:0,g:255,b:228},
+      {r:0,g:255,b:150},
+      {r:0,g:255,b:70},
+      {r:100,g:255,b:0},
+      {r:200,g:255,b:0},
+      {r:255,g:170,b:0},
+      {r:255,g:85,b:0},
+    ]
+  }, []);
+
+	const [color, setColor] = useState(
+		`rgb(${values[10].r}, ${values[0].g}, ${values[0].b})`,
+	)
+
+  useEffect(() => {
+    const rnd = Math.floor(Math.random() * values.length)
+    setColor(`rgb(${values[rnd].r}, ${values[rnd].g}, ${values[rnd].b})`)
+  }, [values])
+	
+
+	return (
+		<HeaderContainer>
+			<nav>
+				{titlePage.length > 0 && <h3 style={{ color: color }}>{titlePage}</h3>}
+				{subTitlePage.length > 0 && (
+					<h4>
+						<span>{subTitlePage.substring(0, 1)}</span>
+						{subTitlePage.substring(1)}
+					</h4>
+				)}
+			</nav>
+		</HeaderContainer>
+	)
 }
 
 /* 

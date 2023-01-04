@@ -1,4 +1,3 @@
-import Sidebar from "./components/Sidebar";
 import HomePage from "./pages/Home";
 import { ThemeProvider } from "styled-components";
 import { dark, light } from "./styles/theme";
@@ -19,12 +18,6 @@ export function AppPortfolio() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Sidebar
-        behance="marcosnunes16"
-        github="MarcosNSouza87"
-        linkedin="marcosnsouza/"
-        changeTheme={toggleTheme}
-      />
       <GlobalStyle />
       <HomePage />
     </ThemeProvider>
