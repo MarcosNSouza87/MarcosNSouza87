@@ -1,6 +1,7 @@
-import { useContext } from 'react'
+import { useContext } from 'react' 
 import * as Icon from '../../../assets/icons'
 import { LanguageContext } from '../../../contexts/languegeContext'
+import { dark } from '../../../styles/theme'
 import ButtonLink from '../ButtonLink'
 
 interface MenuProps {
@@ -11,12 +12,13 @@ interface MenuProps {
 const MenuMain = ({ selected, setSelected }: MenuProps) => {
 	const { language } = useContext(LanguageContext)
 	const lng = language
+	const theme = dark.primary
 
 	const checkSelect = (section: string) => {
 		if (selected === section) {
-			return '#f00'
+			return theme.primary
 		} else {
-			return '#fff'
+			return theme.white
 		}
 	}
 

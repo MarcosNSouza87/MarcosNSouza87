@@ -1,11 +1,10 @@
-import React from "react";
-import Header from "../../../../components/Header";
+import React from 'react'
 
 const Experience = () => {
-  return (
-    <div>
-      <section className="sections">
-				<Header titlePage="" subTitlePage="Experiência Profissional" />
+	return (
+		<div>
+			<section className="sections">
+				<h1>Experiência</h1>
 				<div className="timeline">
 					<div className="itm-card frst">
 						<div className="title-timeline">
@@ -68,7 +67,7 @@ const Experience = () => {
 				</div>
 			</section>
 			<section className="sections">
-				<Header titlePage="" subTitlePage="Formação" />
+				<h1>"Formação" </h1>
 				<div className="timeline">
 					<div className="itm-card frst">
 						<div className="title-timeline">
@@ -94,8 +93,8 @@ const Experience = () => {
 					</div>
 				</div>
 			</section>
-    </div>
-  );
-};
+		</div>
+	)
+}
 
-export default Experience;
+export default Experience

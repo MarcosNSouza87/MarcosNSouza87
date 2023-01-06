@@ -6,7 +6,7 @@ export default {
   primary: {
     primary: "#ff0141", //
     secondary: "#006eef", //
-    white: "#fefefe", // w-a
+    white: "#F4EDE8", // w-a
     gray: "#7a7a7a", //g-a
     dark: "#181818", // d-a
   },

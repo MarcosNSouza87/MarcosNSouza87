@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import styled from 'styled-components'
 import { LanguageContext } from '../../../../contexts/languegeContext'
+import * as Img from '../../../../assets/images'
 
 export default function AboutPage() {
 	const { language } = useContext(LanguageContext)
@@ -12,38 +13,96 @@ export default function AboutPage() {
 					<h3>{lng === 'pt' ? 'Sobre mim' : 'About me'}</h3>
 					<p>
 						{lng === 'pt'
-							? `Deixa eu te contar uma coisa, eu sou um cara muito legal, que gosta de
-						programar e de resolver problemas. Eu sou apaixonado por tecnologia e por
-						resolver problemas. Eu gosto de aprender coisas novas e de compartilhar
-						conhecimento. Eu sou um cara muito legal, que gosta de programar e de
-						resolver problemas. Eu sou apaixonado por tecnologia e por resolver
-						problemas. Eu gosto de aprender coisas novas e de compartilhar
-						conhecimento.`
+							? ` Deixa eu te contar uma coisa, 
+							 Eu sou apaixonado por tecnologia e pelo que faço.
+							 Eu gosto de aprender coisas novas e de compartilhar
+						   conhecimento. Eu sou um cara muito legal, que gosta de programar e
+						   resolver problemas. Atuo como desenvolvedor front-end web e mobile.
+							 Hoje trabalho com ReactJS, React Native, NodeJS, Typescript, 
+							 Styled Components, entre outras tecnologias.
+							
+						`
 							: `
-						Let me tell you something, I'm a very cool guy, who likes to
-						program and solve problems. I'm passionate about technology and solving
-						problems. I like to learn new things and share knowledge. I'm a very cool
-						guy, who likes to program and solve problems. I'm passionate about
-						technology and solving problems. I like to learn new things and share
-						knowledge.
+						Let me tell you something, 
+						I'm loving about technology and what I do. 
+						I like to learn new things and share knowledge. 
+						I'm a nice guy, who likes to program and solve problems. 
+						I work as a front-end web and mobile developer. 
+						Today I work with ReactJS, React Native, NodeJS, Typescript,
+					  Styled Components, among other technologies.
 						`}
 					</p>
 				</InfoMain>
-				<div>
-					<h3>{lng === 'pt' ? 'Habilidades' : 'Skills'}</h3>
+				<InfoDo>
+					<h3>{lng === 'pt' ? 'O que eu faço' : 'What I do'}</h3>
 					<Row>
-						
+						<Item>
+							<img src={Img.Web} alt="web" />
+							<h4>{lng === 'pt' ? 'Desenvolvimento Web' : 'Web Development'}</h4>
+						</Item>
+						<Item>
+							<img src={Img.Mobile} alt="mobile" />
+							<h4>
+								{lng === 'pt' ? 'Desenvolvimento Mobile' : 'Mobile Development'}
+							</h4>
+						</Item>
+						<Item>
+							<img src={Img.Design} alt="design" />
+							<h4>{lng === 'pt' ? 'Design UI/UX' : 'Design UI/UX'}</h4>
+						</Item>
 					</Row>
-				</div>
+				</InfoDo>
 			</Content>
 		</Container>
 	)
 }
 
+const Item = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 20px;
+	img {
+		width: 100px;
+		height: 100px;
+	}
+	h4 {
+		font-size: 1.1rem;
+		font-weight: 400;
+		margin-top: 10px;
+		color: ${({ theme }) => theme.primary.primary};
+		text-transform: uppercase;
+	}
+`
+
+const InfoDo = styled.div`
+	margin-top: 50px;
+	padding: 10px 20px;
+	width: 100%;
+	h3 {
+		font-size: 2rem;
+		font-weight: 400;
+		margin-bottom: 5px;
+		color: ${({ theme }) => theme.primary.primary};
+		text-transform: uppercase;
+	}
+`
+
 const InfoMain = styled.div`
-  border-left: 5px solid ${({ theme }) => theme.primary.primary};
-  padding: 10px 20px;
-`;
+	border-left: 5px solid ${({ theme }) => theme.primary.primary};
+	padding: 10px 20px;
+	h3 {
+		font-size: 2rem;
+		font-weight: 400;
+		margin-bottom: 5px;
+		color: ${({ theme }) => theme.primary.primary};
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 1.5rem;
+	}
+`
 
 const Container = styled.div`
 	display: flex;
@@ -66,5 +125,6 @@ const Row = styled.div`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-  margin: 15px 0;
+	justify-content: space-around;
+	margin: 15px 0;
 `

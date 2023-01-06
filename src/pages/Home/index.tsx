@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/HeaderNav";
+import Header from "../../components/Header";
 import { HomeMainContent, HomePageContainer } from "./styles";
 import * as Section from "./Sections"
 import "./styles.ts";
@@ -14,7 +14,7 @@ export default function HomePage() {
         {selectedSection === "About" && <Section.About />}
         {selectedSection === "Experience" && <Section.Experience />}
         {selectedSection === "ContactMe" && <Section.ContactMe />}
-        {selectedSection === "Projects" && <Section.Projects />}
+        {selectedSection === "Projects" && <Section.Works />}
       </HomeMainContent>
     </HomePageContainer>
   );
