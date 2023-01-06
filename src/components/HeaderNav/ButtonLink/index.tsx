@@ -5,11 +5,12 @@ interface ButtonLinkProps {
   label: string;
   goTo: () => void;
   children?: React.ReactNode;
+  isSelect?: boolean;
 }
 
-const ButtonLink = ({label,children,goTo}:ButtonLinkProps) => {
+const ButtonLink = ({label,children,goTo, isSelect}:ButtonLinkProps) => {
   return (
-    <Button className="menuLink" onClick={goTo}>
+    <Button className="menuLink" onClick={goTo} isSelect={isSelect}>
       {children}
       <div className="label">{label}</div>
     </Button>

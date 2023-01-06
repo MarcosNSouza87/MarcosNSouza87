@@ -1,10 +1,10 @@
-import Header from "../../../components/Header";
+import Header from "../../../../components/Header";
 import "./styles.ts";
-import SearchInput from "../../../components/SearchInput";
+import SearchInput from "../../../../components/SearchInput";
 import { WorkMainContainer, WorksContainer } from "./styles";
-import { listCards } from "../../../services/List";
+import { listCards } from "../../../../services/List";
 import {  useState } from "react";
-import { CardList } from "../../../components/Cards/List";
+import { CardList } from "../../../../components/Cards/List";
 
 
 

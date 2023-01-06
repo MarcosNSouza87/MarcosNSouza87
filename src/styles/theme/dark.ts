@@ -4,7 +4,7 @@ import backImgDark from "../../assets/images/background_dark_theme.svg";
 export default {
   title: "dark",
   primary: {
-    primary: "#fd1824", //
+    primary: "#ff0141", //
     secondary: "#006eef", //
     white: "#fefefe", // w-a
     gray: "#7a7a7a", //g-a

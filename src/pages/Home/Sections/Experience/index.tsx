@@ -1,34 +1,25 @@
-import Header from '../../../components/Header'
-import { AboutContainer } from './styles'
-import './styles.ts'
-export default function AboutPage() {
-	return (
-		<AboutContainer className="about">
-			<section className="sections">
-				<Header titlePage="" subTitlePage="Sobre Mim" />
-				<div className="aboutme">
-					<p>
-						Trabalho com react e react native sempre visando adquirir experiência
-						profissional e mais conhecimento na area de tecnologia da informação,
-						contribuindo para os ganhos e desenvolvimento do local de trabalho
-						através de minhas qualificações, disposição e determinação.
-					</p>
-					<button>Download Curriculum</button>
-				</div>
-			</section>
-			<section className="sections">
+import React from "react";
+import Header from "../../../../components/Header";
+
+const Experience = () => {
+  return (
+    <div>
+      <section className="sections">
 				<Header titlePage="" subTitlePage="Experiência Profissional" />
 				<div className="timeline">
-        <div className="itm-card frst">
+					<div className="itm-card frst">
 						<div className="title-timeline">
 							<h5>09/2021 – atual/2022</h5>
 							<span>OPAH CONSULT, SP</span>
 						</div>
-						<h4 className="title_header">DESENVOLVEDOR REACT-NATIVE / REACT Jr.(Remoto)</h4>
+						<h4 className="title_header">
+							DESENVOLVEDOR REACT-NATIVE / REACT Jr.(Remoto)
+						</h4>
 						<p>
-							Desenvolvimento em React Native (Android e IOS) em Projetos para a empresa.
-              <br />
-              Desenvolvimento em React em Projetos para a empresa
+							Desenvolvimento em React Native (Android e IOS) em Projetos para a
+							empresa.
+							<br />
+							Desenvolvimento em React em Projetos para a empresa
 						</p>
 					</div>
 					<div className="itm-card frst">
@@ -103,6 +94,8 @@ export default function AboutPage() {
 					</div>
 				</div>
 			</section>
-		</AboutContainer>
-	)
-}
+    </div>
+  );
+};
+
+export default Experience;
