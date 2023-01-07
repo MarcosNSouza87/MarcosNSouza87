@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
-import { LanguageContext } from '../../../../contexts/languegeContext'
+import { SettingsContext } from '../../../../contexts/settingsContext'
 import * as Icon from '../../../../assets/icons'
 
 const ContactMe = () => {
-	const { language } = useContext(LanguageContext)
+	const { language } = useContext(SettingsContext)
 	const lng = language
 	return (
 		<Container>

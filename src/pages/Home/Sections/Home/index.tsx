@@ -3,10 +3,11 @@ import styled from 'styled-components'
 import ToggleSwitch from '../../../../components/ToggleSwitchLanguage'
 import Avatar from '../../../../assets/images/Avatar.jpg'
 import * as Icon from '../../../../assets/icons'
-import { LanguageContext } from '../../../../contexts/languegeContext'
+import { SettingsContext } from '../../../../contexts/settingsContext'
+
 
 const Home = () => {
-  const {language} = useContext(LanguageContext)
+  const {language} = useContext(SettingsContext)
   const lng = language;
 
 	return (

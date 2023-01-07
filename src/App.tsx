@@ -1,28 +1,12 @@
-import HomePage from './pages/Home'
-import { ThemeProvider } from 'styled-components'
-import { dark } from './styles/theme'
-import GlobalStyle from './styles/global'
-import './styles/global.ts'
-import { useState } from 'react'
-import { LanguageProvider } from './contexts/languegeContext'
+import HomePage from './pages/Home' 
+import './styles/global.ts' 
+import { SettingsProvider } from './contexts/settingsContext'
 
-export function AppPortfolio() {
-	const [theme] = useState(dark)
-
-	// const toggleTheme = (darkin: boolean) => {
-	// 	if (darkin) {
-	// 		setTheme(light)
-	// 	} else {
-	// 		setTheme(dark)
-	// 	}
-	// }
+export function AppPortfolio() { 
 
 	return (
-		<LanguageProvider>
-			<ThemeProvider theme={theme}>
-				<GlobalStyle />
-				<HomePage />
-			</ThemeProvider>
-		</LanguageProvider>
+		<SettingsProvider> 
+			<HomePage />
+		</SettingsProvider>
 	)
 }

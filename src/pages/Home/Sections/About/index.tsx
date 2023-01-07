@@ -1,10 +1,10 @@
 import { useContext } from 'react'
 import styled from 'styled-components'
-import { LanguageContext } from '../../../../contexts/languegeContext'
 import * as Img from '../../../../assets/images'
+import { SettingsContext } from '../../../../contexts/settingsContext'
 
 export default function AboutPage() {
-	const { language } = useContext(LanguageContext)
+	const { language } = useContext(SettingsContext)
 	const lng = language
 	return (
 		<Container>
@@ -20,7 +20,7 @@ export default function AboutPage() {
 						   resolver problemas. Atuo como desenvolvedor front-end web e mobile.
 							 Hoje trabalho com ReactJS, React Native, NodeJS, Typescript, 
 							 Styled Components, entre outras tecnologias.
-							
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						`
 							: `
 						Let me tell you something, 

@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../../components/Header";
 import { HomeMainContent, HomePageContainer } from "./styles";
 import * as Section from "./Sections"
-import "./styles.ts";
 
 export default function HomePage() {
   const [selectedSection, setSelectedSection] = React.useState("Home");
