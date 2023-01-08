@@ -3,8 +3,6 @@ import ReactDOM from "react-dom";
 import { AppPortfolio } from "./App";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <AppPortfolio />
-  </React.StrictMode>,
+    <AppPortfolio />,
   document.getElementById("root")
 );

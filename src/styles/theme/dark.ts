@@ -8,7 +8,7 @@ export const Dark: ITheme = {
 		selected: [
 			 '#ff0141',
 			 '#FFC701',
-			 '#01FF94',
+			 '#b4ef14',
 			 '#01D1FF',
 			 '#8F01FF',
 		],

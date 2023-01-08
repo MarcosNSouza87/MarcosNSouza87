@@ -8,6 +8,10 @@ import Github from './IconGithub'
 import Whatsapp from './IconWhatsapp'
 import Email from './IconEmail'
 import Behance from './IconBehance'
+import Settings from './IconSettings'
+import Close from './IconClose'
+import Light from './IconThemeLight'
+import Dark from './IconThemeDark'
 
 export {
 	About,
@@ -20,4 +24,8 @@ export {
 	Whatsapp,
 	Email,
 	Behance,
+	Settings,
+	Close,
+	Light,
+	Dark,
 }

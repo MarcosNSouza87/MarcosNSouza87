@@ -8,7 +8,7 @@ export const Light: ITheme = {
     selected: [
       '#ff0141',
       '#FFC701',
-      '#01FF94',
+      '#b4ef14',
       '#01D1FF',
       '#8F01FF',
    ],
@@ -16,7 +16,7 @@ export const Light: ITheme = {
     white: "#181818", 
     gray: "#414141",
     grayLight: "#979797",
-    dark: "#fefefe", 
+    dark: "#d9d9d9", 
   },
   font: {
     size: {

@@ -13,6 +13,13 @@ const ToggleSwitch = () => {
 			setLanguage('en')
 		}
 	}, [isToggled, setLanguage])
+	useEffect(() => {
+		if (language === 'pt') {
+			setIsToggled(true)
+		} else {
+			setIsToggled(false)
+		}
+	}, [language])
 	return (
 		<Wrapper onClick={onToggle} checked={isToggled}>
 			<CheckBox checked={isToggled} />
