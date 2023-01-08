@@ -5,8 +5,8 @@ import { createContext, useContext, useState } from "react"
 interface SettingsContextType {
   theme: string;
   setTheme: (theme: string) => void
-  color: string
-  setColor: (color: string) => void
+  color: number
+  setColor: (color: number) => void
   language: string // 'en' | 'pt
   setLanguage: (language: string) => void
 }
@@ -15,7 +15,7 @@ interface SettingsContextType {
 export const SettingsContext = createContext<SettingsContextType>({
   theme: 'dark',
   setTheme: () => {},
-  color: 'red',
+  color: 0,
   setColor: () => {},
   language: 'en',
   setLanguage: () => {},
@@ -24,7 +24,7 @@ export const SettingsContext = createContext<SettingsContextType>({
 //create provider
 export const SettingsProvider: React.FC = ({ children }) => {
   const [theme, setTheme] = useState('dark')
-  const [color, setColor] = useState('red')
+  const [color, setColor] = useState(2)
   const [language, setLanguage] = useState('en')
   return (
     <SettingsContext.Provider value={{ theme, setTheme, color, setColor, language, setLanguage }}>

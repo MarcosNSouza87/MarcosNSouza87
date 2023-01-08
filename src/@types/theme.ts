@@ -2,16 +2,11 @@ export interface ITheme {
 	title: string
 	background: string
 	colors: {
-		primary: {
-			red: string
-			yellow: string
-			green: string
-			blue: string
-			purple: string
-		}
+		selected: string[]
 		secondary: string
 		white: string
 		gray: string
+		grayLight: string
 		dark: string
 	}
 	font: {

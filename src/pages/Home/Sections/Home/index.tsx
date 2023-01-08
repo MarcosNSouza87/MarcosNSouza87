@@ -4,23 +4,21 @@ import ToggleSwitch from '../../../../components/ToggleSwitchLanguage'
 import Avatar from '../../../../assets/images/Avatar.jpg'
 import * as Icon from '../../../../assets/icons'
 import { SettingsContext } from '../../../../contexts/settingsContext'
-
-
 const Home = () => {
-  const {language} = useContext(SettingsContext)
-  const lng = language;
+	const { language, color } = useContext(SettingsContext)
+	const lng = language
 
 	return (
 		<Container>
 			<Content>
 				<HomeContainer>
 					<HomeAvatar src={Avatar} />
-					<InfoContent>
-						<InfoMain>
+					<InfoContent color={color.toString()}>
+						<InfoMain color={color.toString()}>
 							<h1>Marcos Nunes de Souza</h1>
-							<h2>{
-                lng === 'pt' ? 'Desenvolvedor Front-End' : 'Front-End Developer'
-                }</h2>
+							<h2>
+								{lng === 'pt' ? 'Desenvolvedor Front-End' : 'Front-End Developer'}
+							</h2>
 							<p>React, React-Native</p>
 						</InfoMain>
 						<Row>
@@ -32,78 +30,81 @@ const Home = () => {
 							</ButtonIcon>
 						</Row>
 						<Row>
-							<Button className='red'>{
-                lng === 'pt' ? 'Curriculo' : 'RESUME'
-              }</Button>
-							<Button>{
-                lng === 'pt' ? 'Contato' : 'Hire Me'
-                }</Button>
+							<Button className="red" color={color.toString()}>
+								{lng === 'pt' ? 'Curriculo' : 'RESUME'}
+							</Button>
+							<Button color={color.toString()}>
+								{lng === 'pt' ? 'Contato' : 'Hire Me'}
+							</Button>
 						</Row>
 					</InfoContent>
 				</HomeContainer>
-          <Footer>
-            <h4>{lng === 'pt' ? 'Escolha o idioma:' : 'Choose the language:'
-            }</h4>
-            <ToggleSwitch />
-          </Footer>
-				
+				<Footer>
+					<h4>{lng === 'pt' ? 'Escolha o idioma:' : 'Choose the language:'}</h4>
+					<ToggleSwitch />
+				</Footer>
 			</Content>
 		</Container>
 	)
 }
 
 const Footer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
-  h4 {
-    margin-bottom: 10px;
-  }
-`;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+	h4 {
+		margin-bottom: 10px;
+	}
+`
 
-const InfoMain = styled.div`
-  border-left: 5px solid ${({ theme }) => theme.primary.primary};
-  padding: 10px;
-`;
+interface IItem {
+	color: string
+}
 
-const Button = styled.button`
-  width: 170px;
-  height: 50px;
-  border-radius: 2px;
-  border: none;
-  font-size: 20px;
-  text-transform: uppercase;
-  margin-right: 20px;
-  color: #979797;
-  background-color: #272727;
-  &.red {
-    color: ${({ theme }) => theme.primary.white};
-    background-color: ${({ theme }) => theme.primary.primary};
-  }
-  :hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-`;
+const InfoMain = styled.div<IItem>`
+	border-left: 5px solid
+		${({ theme, color }) => theme.colors.selected[Number(color)]};
+	padding: 10px;
+`
+
+const Button = styled.button<IItem>`
+	width: 170px;
+	height: 50px;
+	border-radius: 2px;
+	border: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-right: 20px;
+	color: ${({ theme }) => theme.colors.grayLight};
+	background-color: ${({ theme }) => theme.colors.dark};
+	&.red {
+		color: ${({ theme }) => theme.colors.white};
+		background-color: ${({ theme, color }) => theme.colors.selected[Number(color)]};
+	}
+	:hover {
+		cursor: pointer;
+		opacity: 0.8;
+	}
+`
 
 const ButtonIcon = styled.div`
 	width: 40px;
 	height: 40px;
 	border-radius: 5px;
-	background-color: #272727;
+	background-color: ${({ theme }) => theme.colors.dark};
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  margin-right: 20px;
-  cursor: pointer;
+	margin-right: 20px;
+	cursor: pointer;
 `
 const Row = styled.div`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-  margin: 15px 0;
+	margin: 15px 0;
 `
 
 const Container = styled.div`
@@ -126,10 +127,10 @@ const HomeContainer = styled.div`
 const HomeAvatar = styled.img`
 	width: 300px;
 	height: 300px;
-  border-radius: 3px;
+	border-radius: 3px;
 `
 
-const InfoContent = styled.div`
+const InfoContent = styled.div<IItem>`
 	display: flex;
 	width: 100%;
 	flex-direction: column;
@@ -139,17 +140,17 @@ const InfoContent = styled.div`
 	h1 {
 		font-size: 30px;
 		font-weight: 600;
-		color: ${({ theme }) => theme.primary.white};
+		color: ${({ theme }) => theme.colors.white};
 	}
 	h2 {
 		font-size: 20px;
 		font-weight: 600;
-		color: ${({ theme }) => theme.primary.primary};
+		color: ${({ theme, color }) => theme.colors.selected[Number(color)]};
 	}
 	p {
 		font-size: 22px;
 		font-weight: 600;
-		color: ${({ theme }) => theme.primary.white};
+		color: ${({ theme }) => theme.colors.white};
 	}
 `
 

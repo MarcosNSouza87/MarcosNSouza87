@@ -1,7 +1,7 @@
 import { useContext } from 'react' 
-import * as Icon from '../../../assets/icons'
-import { LanguageContext } from '../../../contexts/languegeContext'
-import { dark } from '../../../styles/theme'
+import * as Icon from '../../../assets/icons' 
+import { SettingsContext } from '../../../contexts/settingsContext'
+import {theme as Stheme} from '../../../styles/theme'
 import ButtonLink from '../ButtonLink'
 
 interface MenuProps {
@@ -10,13 +10,13 @@ interface MenuProps {
 }
 
 const MenuMain = ({ selected, setSelected }: MenuProps) => {
-	const { language } = useContext(LanguageContext)
+	const { language,color } = useContext(SettingsContext)
 	const lng = language
-	const theme = dark.primary
+	const theme = Stheme.Dark.colors
 
 	const checkSelect = (section: string) => {
 		if (selected === section) {
-			return theme.primary
+			return theme.selected[color]
 		} else {
 			return theme.white
 		}

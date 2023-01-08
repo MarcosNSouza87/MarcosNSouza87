@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const WorksContainer = styled.div`
-  color: var(--color-white);
-`;
+	color: var(--color-white);
+`
 
 export const WorkMainContainer = styled.main`
   display: flex;
@@ -23,13 +23,13 @@ export const WorkMainContainer = styled.main`
     }
 
     &::-webkit-scrollbar-track {
-      background-color: ${(props)=> props.theme.secondary.dark};
+      background-color: ${(props) => props.theme.colors.dark};
       border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
       border-radius: 10px;
-      background-color: ${(props)=>props.theme.secondary.gray};
+      background-color: ${(props) => props.theme.colors.gray};
     }
 
     .row__posters {
@@ -37,4 +37,4 @@ export const WorkMainContainer = styled.main`
       flex-direction: column;
     }
   }
-`;
+`

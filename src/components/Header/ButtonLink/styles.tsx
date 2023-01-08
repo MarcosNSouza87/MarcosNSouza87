@@ -1,24 +1,26 @@
 import styled from 'styled-components'
+import { ITheme } from '../../../@types/theme'
 
 interface ButtonProps {
 	isSelect?: boolean
-	theme: any
+	theme: ITheme
+	color: string
 }
 
 export const Button = styled.button<ButtonProps>`
-	background-color: ${(props) =>
-		props.isSelect ? props.theme.primary.primary + '22' : 'transparent'};
+	background-color: ${({theme,color,isSelect}) =>
+		isSelect ? theme.colors.selected[Number(color)] + '22' : 'transparent'};
 	border: none;
 	height: 75px;
 	width: 110px;
 	border-bottom: 2px solid
-		${(props) => (props.isSelect ? props.theme.primary.primary : 'transparent')};
+		${({isSelect,theme,color}) => (isSelect ? theme.colors.selected[Number(color)]: 'transparent')};
 	div.label {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 13px;
-		color: ${(props) =>
-			props.isSelect ? props.theme.primary.primary : props.theme.primary.white};
+		color: ${({isSelect,theme,color}) =>
+			isSelect ? theme.colors.selected[Number(color)] : theme.colors.white};
 	}
   svg {
     margin-top: 10px;
@@ -28,6 +30,6 @@ export const Button = styled.button<ButtonProps>`
   }
 	:hover {
 		cursor: pointer;
-    border-bottom: 2px solid ${(props) => props.theme.primary.primary};
+    border-bottom: 2px solid ${({theme,color}) => theme.colors.selected[Number(color)]};
 	}
 `

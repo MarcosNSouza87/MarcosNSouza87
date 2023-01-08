@@ -1,22 +1,23 @@
 import { ITheme } from '../../@types/theme';
 import backImgDark from '../../assets/images/background_dark_theme.svg'
 
-
-const Dark: ITheme = {
+export const Dark: ITheme = {
 	title: 'dark',
 	background: '#181818',
 	colors: {
-		primary: {
-			red: '#ff0141',
-			yellow: '#FFC701',
-			green: '#01FF94',
-			blue: '#01D1FF',
-			purple: '#8F01FF',
-		},
+		selected: [
+			 '#ff0141',
+			 '#FFC701',
+			 '#01FF94',
+			 '#01D1FF',
+			 '#8F01FF',
+		],
 		secondary: '#006eef',
 		white: '#F4EDE8',
 		gray: '#7a7a7a',
-		dark: '#181818',
+		grayLight: '#979797',
+		dark: '#272727',
+
 	},
 	font: {
 		size: {
@@ -37,5 +38,3 @@ const Dark: ITheme = {
 	},
 	backgroundImgUrl: backImgDark,
 }
-
-export default Dark;

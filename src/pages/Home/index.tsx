@@ -10,10 +10,10 @@ export default function HomePage() {
       <Header selectedSection={selectedSection} setSelectedSection={setSelectedSection}/>
       <HomeMainContent>
         {selectedSection === "Home" && <Section.Home />}
-        {selectedSection === "About" && <Section.About />}
+         {selectedSection === "About" && <Section.About />}
         {selectedSection === "Experience" && <Section.Experience />}
         {selectedSection === "ContactMe" && <Section.ContactMe />}
-        {selectedSection === "Projects" && <Section.Works />}
+        {selectedSection === "Projects" && <Section.Works />} 
       </HomeMainContent>
     </HomePageContainer>
   );

@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 
-export const Card = styled.div`
+interface ICard {
+  color: string;
+}
+
+export const Card = styled.div<ICard>`
   display: grid;
   grid-template-columns: 170px 280px 150px;
   width: 600px;
   height: 170px;
-  background: ${(props)=> props.theme.primary.dark};
+  background: ${(props)=> props.theme.colors.dark};
   box-shadow: 0px 0px 6px 7px rgba(0, 0, 0, 0.25);
   margin: 10px;
   .info {
@@ -31,21 +35,21 @@ export const Card = styled.div`
     flex-direction: row;
     gap: 10px;
     a.dev {
-      background-color: ${(props)=> props.theme.primary.secondary};
+      background-color: ${({theme})=> theme.colors.secondary};
       svg {
-        fill: ${(props)=> props.theme.primary.white};
+        fill: ${({theme})=> theme.colors.white};
       }
 
     }
     a.prod {
-      background-color: ${(props)=> props.theme.primary.primary};
+      background-color: ${({theme,color})=> theme.colors.selected[Number(color)]};
       svg {
-        stroke: ${(props)=> props.theme.primary.white};
+        stroke: ${({theme})=> theme.colors.white};
       }
     }
     a.disable {
-      color: ${(props)=> props.theme.primary.gray};
-      background-color: ${(props)=> props.theme.secondary.gray};
+      color: ${({theme})=> theme.colors.gray};
+      background-color: ${({theme})=> theme.colors.gray};
       &:hover{
         cursor: not-allowed;
       }
@@ -57,7 +61,7 @@ export const Card = styled.div`
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      color: ${(props)=> props.theme.secondary.white};
+      color: ${(props)=> props.theme.colors.white};
       text-decoration: none;
       padding: 10px;
     }

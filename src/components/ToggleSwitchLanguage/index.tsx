@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from 'react'
-import { LanguageContext } from '../../contexts/languegeContext';
+import { SettingsContext } from '../../contexts/settingsContext';
 import { CheckBox, Wrapper } from './styles'
 
 const ToggleSwitch = () => {
-	const {setLanguage,language} = useContext(LanguageContext);
+	const {setLanguage,language} = useContext(SettingsContext);
 	const [isToggled, setIsToggled] = React.useState(language === 'pt' ? true : false)
 	const onToggle = () => setIsToggled(!isToggled)
 	useEffect(() => {

@@ -1,20 +1,21 @@
 import backImgWhite from '../../assets/images/background_white_theme.svg'
 import { ITheme } from '../../@types/theme';
 
-const Light: ITheme = {
+export const Light: ITheme = {
   title: 'light',
   background: '#fefefe',
   colors: {
-    primary: {
-      red: '#ff0141',
-      yellow: '#FFC701',
-      green: '#01FF94',
-      blue: '#01D1FF',
-      purple: '#8F01FF',
-    },
+    selected: [
+      '#ff0141',
+      '#FFC701',
+      '#01FF94',
+      '#01D1FF',
+      '#8F01FF',
+   ],
     secondary: '#006eef',
     white: "#181818", 
-    gray: "#414141", 
+    gray: "#414141",
+    grayLight: "#979797",
     dark: "#fefefe", 
   },
   font: {
@@ -36,5 +37,3 @@ const Light: ITheme = {
   },
   backgroundImgUrl: backImgWhite,
 }
-
-export default Light;
