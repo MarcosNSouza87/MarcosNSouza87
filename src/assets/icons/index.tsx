@@ -12,6 +12,8 @@ import Settings from './IconSettings'
 import Close from './IconClose'
 import Light from './IconThemeLight'
 import Dark from './IconThemeDark'
+import ArrowLeft from './IconArrowLeft'
+import ArrowRight from './IconArrowRight'
 
 export {
 	About,
@@ -28,4 +30,6 @@ export {
 	Close,
 	Light,
 	Dark,
+	ArrowLeft,
+	ArrowRight,
 }
