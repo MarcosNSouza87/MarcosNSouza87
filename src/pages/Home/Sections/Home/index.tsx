@@ -5,7 +5,7 @@ import Avatar from '../../../../assets/images/Avatar.jpg'
 import * as Icon from '../../../../assets/icons'
 import { SettingsContext } from '../../../../contexts/settingsContext'
 const Home = () => {
-	const { language, color } = useContext(SettingsContext)
+	const { language, color,theme } = useContext(SettingsContext)
 	const lng = language
 
 	return (
@@ -22,12 +22,12 @@ const Home = () => {
 							<p>React, React-Native</p>
 						</S.InfoMain>
 						<S.Row>
-							<S.ButtonIcon>
-								<Icon.Linkedin color="#979797" />
-							</S.ButtonIcon>
-							<S.ButtonIcon>
-								<Icon.Github color="#979797" />
-							</S.ButtonIcon>
+							<S.IconImg>
+							<Icon.Linkedin color={theme.colors.gray} />
+							</S.IconImg>
+							<S.IconImg>
+							<Icon.Github color={theme.colors.gray} />
+							</S.IconImg>
 						</S.Row>
 						<S.Row>
 							<S.Button className="red" color={color.toString()}>

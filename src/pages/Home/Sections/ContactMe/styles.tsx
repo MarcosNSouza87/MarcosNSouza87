@@ -22,9 +22,9 @@ export const Item = styled.div`
 export const IconImg = styled.div<IItem>`
 	width: 50px;
 	height: 50px;
-	background-color: #28262e;
+	background-color: ${({ theme }) => theme.colors.dark};
 	border: 1px solid ${({ theme, color }) => theme.colors.selected[Number(color)]};
-	border-radius: 10px;
+	border-radius: 4px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -36,13 +36,13 @@ export const IconImg = styled.div<IItem>`
 export const Text = styled.div`
 	height: 50px;
 	width: 300px;
-	background-color: #28262e;
-	border-radius: 10px;
+	background-color: ${({ theme }) => theme.colors.dark};
+	border-radius: 4px;
 	margin-left: 10px;
 	display: flex;
 	align-items: center;
 	padding-left: 10px;
-	color: #f4ede8;
+	color: ${({ theme }) => theme.colors.white};
 	letter-spacing: 1px;
 `
 

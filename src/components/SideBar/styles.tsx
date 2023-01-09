@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ContainerSideBar = styled.div`
 	position: absolute;
 	right: 0;
-	top: 80px;
+	top: 75px;
 	width: 300px;
 	min-height: 400px;
 	background-color: ${({ theme }) => theme.colors.white};
@@ -16,8 +16,11 @@ export const ContainerSideBar = styled.div`
 	.list {
 	}
 	.container {
+		margin-top: 12px;
+		margin-bottom: 10px;
 		color: ${({ theme }) => theme.colors.dark};
 	}
+	z-index: 100;
 `
 
 export const Button = styled.button`
@@ -44,4 +47,5 @@ export const ItemColor = styled.button<IItem>`
 	border: 2px solid
 		${({ isSelected, theme }) => (isSelected ? theme.colors.dark : 'transparent')};
 	background-color: ${({ color }) => color};
+	cursor: pointer;
 `

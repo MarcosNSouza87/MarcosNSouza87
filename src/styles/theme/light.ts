@@ -7,12 +7,12 @@ export const Light: ITheme = {
   colors: {
     selected: [
       '#ff0141',
-      '#FFC701',
-      '#b4ef14',
-      '#01D1FF',
-      '#8F01FF',
+      '#ffaf00',
+      '#47c200',
+      '#00a0ff',
+      '#8257e5',
    ],
-    secondary: '#006eef',
+    secondary: '#28262b',
     white: "#181818", 
     gray: "#414141",
     grayLight: "#979797",

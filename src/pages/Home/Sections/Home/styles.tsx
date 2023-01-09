@@ -24,15 +24,15 @@ padding: 10px;
 export const Button = styled.button<IItem>`
 width: 170px;
 height: 50px;
-border-radius: 2px;
+border-radius: 4px;
 border: none;
 font-size: 20px;
 text-transform: uppercase;
 margin-right: 20px;
-color: ${({ theme }) => theme.colors.grayLight};
+color: ${({ theme }) => theme.colors.white};
 background-color: ${({ theme }) => theme.colors.dark};
 &.red {
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme,color }) => color === "0" || color === "4" ? theme.colors.white : theme.colors.secondary};
   background-color: ${({ theme, color }) => theme.colors.selected[Number(color)]};
 }
 :hover {
@@ -41,16 +41,24 @@ background-color: ${({ theme }) => theme.colors.dark};
 }
 `
 
-export const ButtonIcon = styled.div`
-width: 40px;
-height: 40px;
-border-radius: 5px;
-background-color: ${({ theme }) => theme.colors.dark};
-display: flex;
-align-items: center;
-justify-content: center;
-margin-right: 20px;
-cursor: pointer;
+export const IconImg = styled.div`
+	width: 50px;
+	height: 50px;
+	background-color: ${({ theme }) => theme.colors.dark};
+	border: 1px solid ${({ theme }) => theme.colors.gray};
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  margin-right: 20px;
+	svg {
+		width: 30px;
+		height: 30px;
+	}
+  :hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 `
 export const Row = styled.div`
 display: flex;

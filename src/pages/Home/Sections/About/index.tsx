@@ -4,7 +4,7 @@ import { SettingsContext } from '../../../../contexts/settingsContext'
 import * as S from './styles'
 
 export default function AboutPage() {
-	const { language, color } = useContext(SettingsContext)
+	const { language, color,theme } = useContext(SettingsContext)
 	const lng = language
 	return (
 		<S.Container>
@@ -37,17 +37,17 @@ export default function AboutPage() {
 					<h3>{lng === 'pt' ? 'O que eu faço' : 'What I do'}</h3>
 					<S.Row>
 						<S.Item color={color.toString()}>
-							<img src={Img.Web} alt="web" />
+							<Img.Web color={theme.colors.white}/>
 							<h4>{lng === 'pt' ? 'Desenvolvimento Web' : 'Web Development'}</h4>
 						</S.Item>
 						<S.Item color={color.toString()}>
-							<img src={Img.Mobile} alt="mobile" />
+							<Img.Mobile color={theme.colors.white} />
 							<h4>
 								{lng === 'pt' ? 'Desenvolvimento Mobile' : 'Mobile Development'}
 							</h4>
 						</S.Item>
 						<S.Item color={color.toString()}>
-							<img src={Img.Design} alt="design" />
+							<Img.Design color={theme.colors.white} />
 							<h4>{lng === 'pt' ? 'Design UI/UX' : 'Design UI/UX'}</h4>
 						</S.Item>
 					</S.Row>

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.div<{ checked: boolean }>`
 	width: 90px;
 	height: 50px;
-	background: ${(props) => (props.checked ? '#00862f55' : '#2070c755')};
+	background: ${({checked, theme}) => (checked ? theme.colors.grayLight : theme.colors.gray)};
 	border-radius: 24px;
 	padding: 5px;
 	cursor: pointer;
@@ -13,7 +13,7 @@ export const Wrapper = styled.div<{ checked: boolean }>`
 export const CheckBox = styled.div<{ checked: boolean }>`
 	width: 40px;
 	height: 40px;
-	background-color: ${(props) => (props.checked ? '#00862f' : '#2070c7')};
+	background-color: ${({checked,theme}) => (checked ? theme.colors.white : theme.colors.white)};
 	background-size: 40px;
 	display: flex;
 	justify-content: center;

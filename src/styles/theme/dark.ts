@@ -6,13 +6,15 @@ export const Dark: ITheme = {
 	background: '#181818',
 	colors: {
 		selected: [
-			 '#ff0141',
-			 '#FFC701',
-			 '#b4ef14',
-			 '#01D1FF',
-			 '#8F01FF',
+			 '#ff0141', // 0
+			 '#FFC701', // 1
+			 '#b4ef14', // 2
+			 '#01D1FF', // 3
+			 '#8F01FF', // 4
+			 //'#6c01ff', // 5
+			 //'#ff01d1', // 6
 		],
-		secondary: '#006eef',
+		secondary: '#28262b',
 		white: '#F4EDE8',
 		gray: '#7a7a7a',
 		grayLight: '#979797',

@@ -1,7 +1,5 @@
-import { useState } from 'react'
 import ButtonSetting from './ButtonRight'
 import MenuMain from './Menu'
-import Sidebar from './SideBar'
 import { HeaderContainer } from './styles'
 
 interface HeaderProps {
@@ -10,20 +8,14 @@ interface HeaderProps {
 }
 
 const Header = ({ selectedSection, setSelectedSection }: HeaderProps) => {
-	const [openConfig, setOpenConfig] = useState(false);
 	return (
-		<>
 		<HeaderContainer>
 			<div className="menuSide"></div>
 			<MenuMain selected={selectedSection} setSelected={setSelectedSection} />
 			<div className="menu-right">
-				<ButtonSetting open={openConfig} setOpen={setOpenConfig}/>
+				<ButtonSetting />
 			</div>
 		</HeaderContainer>
-		{openConfig && (
-			<Sidebar setOpen={setOpenConfig}/>
-		)}
-		</>
 	)
 }
 

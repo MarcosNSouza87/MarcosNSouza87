@@ -3,15 +3,10 @@ import * as Icon from '../../../assets/icons'
 import { SettingsContext } from '../../../contexts/settingsContext'
 import { Button } from './styles'
 
-interface IBtnConfig {
-  open: boolean
-  setOpen: (value:boolean) => void
-}
-
-const ButtonSetting = ({open,setOpen}:IBtnConfig) => {
-  const {color,theme} = useContext(SettingsContext);
+const ButtonSetting = () => {
+  const {color,theme,setOpenSettings,openSettings} = useContext(SettingsContext);
   return(
-    <Button color={color.toString()} onClick={() => setOpen(!open)} >
+    <Button color={color.toString()} onClick={() => setOpenSettings(!openSettings)} >
       <Icon.Settings color={theme.colors.grayLight}/>
     </Button>
   )
