@@ -14,8 +14,12 @@ import Light from './IconThemeLight'
 import Dark from './IconThemeDark'
 import ArrowLeft from './IconArrowLeft'
 import ArrowRight from './IconArrowRight'
+import Education from './IconEducation'
+import Work from './IconWork'
 
 export {
+	Education,
+	Work,
 	About,
 	ContactMe,
 	Experience,

@@ -1,86 +1,89 @@
 import styled from 'styled-components'
 
-interface IContainer {
+export const Container = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 100vw;
+	padding: 60px 0;
+`
+
+export const Content = styled.div`
+	display: flex;
+	max-width: 950px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+`
+
+export const Row = styled.div`
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 440px;
+`;
+
+interface IButton {
+	color: string
+	isActive: boolean
+}
+
+export const Button = styled.button<IButton>`
+	width: 200px;
+	padding: 10px 20px;
+	color: ${({ theme }) => theme.colors.gray};
+	background-color: transparent;
+	border: 1px solid
+		${({ theme, color, isActive }) =>
+			isActive ? theme.colors.selected[Number(color)] : theme.colors.dark};
+	border-radius: 10px;
+	:hover {
+		background-color: ${({ theme }) => theme.colors.dark};
+		cursor: pointer;
+	}
+	svg {
+		width: 30px;
+		height: 30px;
+	}
+`
+
+interface IItem {
 	color: string
 }
 
-export const Container = styled.div<IContainer>`
-	color: ${(props) => props.theme.colors.white};
-	height: 813px;
-	width: 100%;
-	flex-wrap: nowrap;
-	overflow-x: auto;
-
-	&::-webkit-scrollbar {
-		width: 12px;
-	}
-
-	&::-webkit-scrollbar-track {
-		background-color: ${({theme}) => theme.colors.dark};
-		border-radius: 10px;
-	}
-
-	&::-webkit-scrollbar-thumb {
-		border-radius: 10px;
-		background-color: ${({theme}) => theme.colors.gray};
-	}
-	section {
-		.timeline {
-			padding: 0 100px;
-			.itm-card {
-				border-left: 1px solid ${({theme}) => theme.colors.gray};
-				padding: 0px 15px 15px;
-				.title-timeline {
-					display: flex;
-					flex-direction: row;
-					align-items: center;
-					gap: 5px;
-					h5 {
-						color: ${({theme, color}) => theme.colors.selected[Number(color)]};
-						background-color: ${({theme}) => theme.colors.dark};
-						border: 1px solid ${({theme, color}) => theme.colors.selected[Number(color)]};
-						padding: 5px 10px;
-						margin-left: -50px;
-						border-radius: 20px;
-					}
-					span {
-						font-weight: 600;
-						font-size: 14px;
-					}
-				}
-				h4.title_header {
-					font-weight: 600;
-					font-size: 16px;
-					padding: 10px 0 5px;
-				}
-				p {
-					font-size: 14px;
-					color: ${({theme}) => theme.colors.gray};
-				}
-				&.frst {
-					.title-timeline {
-						h5 {
-							color: ${({theme}) => theme.colors.white};
-							background-color: ${({theme, color}) => theme.colors.selected[Number(color)]};
-							border: 1px solid ${({theme, color}) => theme.colors.selected[Number(color)]};
-						}
-					}
-				}
-			}
-		}
-
-		.aboutme {
-			padding: 0 100px;
-			p {
-				margin-left: 15px;
-			}
-			button {
-				padding: 10px 20px;
-				color: ${({theme}) => theme.colors.white};
-				background-color: ${({theme}) => theme.colors.secondary};
-				border: 1px solid ${({theme}) => theme.colors.dark};
-				border-radius: 10px;
-			}
-		}
-	}
+export const Title = styled.h3<IItem>`
+	color: ${({ theme, color }) => theme.colors.selected[Number(color)]};
+	font-weight: 400;
+	font-size: 33px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
 `
+
+export const Main = styled.div``
+
+export const Card = styled.div`
+	margin: 10px 0;
+`
+export const CardHeader = styled.div``
+export const CardRow = styled.div`
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+`
+export const Date = styled.h4<IItem>`
+	margin-right: 20px;
+	border: 1px solid ${({ theme }) => theme.colors.dark};
+	background-color: ${({ theme, color }) => theme.colors.selected[Number(color)]};
+	font-weight: 400;
+	border-radius: 60px;
+	padding: 5px 15px;
+`
+export const Company = styled.h4``
+export const TitleCard = styled.h4``
+
+
+export const CardBody = styled.div``
+export const Description = styled.p``
