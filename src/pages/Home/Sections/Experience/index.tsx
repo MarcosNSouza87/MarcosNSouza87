@@ -55,15 +55,13 @@ export default function Experience() {
 						return (
 							<S.Card key={index}>
 								<S.CardHeader>
-									<S.CardRow>
 										<S.Date color={color.toString()}>{item.date}</S.Date>
 										<S.Company>{item.company}</S.Company>
-									</S.CardRow>
+								</S.CardHeader>
+								<S.CardBody>
 									<S.TitleCard>
 										{language === 'pt' ? item.title.pt : item.title.en}
 									</S.TitleCard>
-								</S.CardHeader>
-								<S.CardBody>
 									<S.Description>
 										{language === 'pt' ? item.description.pt : item.description.en}
 									</S.Description>

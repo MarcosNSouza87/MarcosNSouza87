@@ -66,8 +66,7 @@ export const Main = styled.div``
 export const Card = styled.div`
 	margin: 10px 0;
 `
-export const CardHeader = styled.div``
-export const CardRow = styled.div`
+export const CardHeader = styled.div`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -80,10 +79,22 @@ export const Date = styled.h4<IItem>`
 	font-weight: 400;
 	border-radius: 60px;
 	padding: 5px 15px;
-`
+	`
+export const CardBody = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 10px 0 15px 15px;
+	margin-left: 15px;
+	border-left: 2px dotted ${({ theme }) => theme.colors.grayLight};
+`;
+
+
+
+
 export const Company = styled.h4``
 export const TitleCard = styled.h4``
 
 
-export const CardBody = styled.div``
 export const Description = styled.p``
