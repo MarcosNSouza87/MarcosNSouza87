@@ -2,7 +2,7 @@ type IconProps = {
   color: string;
 };
 
-export function IconThemeLight({ color }: IconProps) {
+export default function IconThemeLight({ color }: IconProps) {
   return (
     <svg
       width="30"

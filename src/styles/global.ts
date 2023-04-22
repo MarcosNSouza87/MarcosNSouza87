@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 * {
@@ -19,8 +19,8 @@ textarea {
 body{
   background-size: cover;
   color: #212529;
-  background-image: url(${(props)=> props.theme.backgroundImgUrl});
-  background-color: ${(props)=> props.theme.primary.dark};
+  background-image: url(${({ theme }) => theme.backgroundImgUrl});
+  background-color: ${({ theme }) => theme.background};
 }
 
 #root {
@@ -29,19 +29,17 @@ body{
   flex-direction: row;
 }
 
-
-
 .section {
   display: flex;
   flex-direction: column;
   width: 100%;
-  color: ${(props)=> props.theme.primary.white};
-  background-color: ${(props)=> props.theme.primary.dark};
+  color: ${(props) => props.theme.colors.white};
+  background-color: ${(props) => props.theme.colors.dark};
 }
 
 .background-span {
   font-family: 'Roboto';
-  color: ${(props)=> props.theme.secondary.dark};
+  color: ${(props) => props.theme.colors.dark};
   font-size: 18.75rem;
   font-weight: 900;
   width: 370px;
@@ -59,4 +57,4 @@ body{
   --color-dark: #e6e7e8;
 }
 
-`;
+`

@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const SearchInputContainer = styled.div`
-  color: ${(props)=>props.theme.inputGroup.border};
-  background-color: ${(props)=>props.theme.inputGroup.background};
+  color: ${(props)=>props.theme.colors.gray};
+  background-color: ${(props)=>props.theme.colors.dark};
   width: 100%;
   max-width: 650px;
   margin: 10px 0;
   div {
     border-radius: 3px;
-    border: 2px solid ${(props) => props.theme.secondary.gray};
+    border: 2px solid ${(props) => props.theme.colors.gray};
     display: flex;
     align-items: center;
     transition: all 0.4s;
@@ -17,11 +17,11 @@ export const SearchInputContainer = styled.div`
       flex: 1;
       background: transparent;
       border: 0;
-      color: ${(props) => props.theme.primary.white};
+      color: ${(props) => props.theme.colors.white};
       font-size: 1.1rem;
       outline: none;
       &::placeholder {
-        color: ${(props) => props.theme.primary.gray};
+        color: ${(props) => props.theme.colors.gray};
         font-weight: 400;
       }
       &::-webkit-search-cancel-button {
@@ -30,7 +30,7 @@ export const SearchInputContainer = styled.div`
       }
     }
     svg {
-      stroke:${(props)=>props.theme.primary.white};
+      stroke:${(props)=>props.theme.colors.white};
       margin-right: 14px;
       margin-left: 14px;
     }

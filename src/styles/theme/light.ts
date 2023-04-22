@@ -1,39 +1,39 @@
 import backImgWhite from '../../assets/images/background_white_theme.svg'
-/* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
-export default {
-  title: "light",
-  primary: {
-    primary: "#ff0141", //
-    secondary: "#01c4ff", //
-    white: "#181818", // w-a
-    gray: "#414141", //g-a
-    dark: "#fefefe", // d-a
+import { ITheme } from '../../@types/theme';
+
+export const Light: ITheme = {
+  title: 'light',
+  background: '#fefefe',
+  colors: {
+    selected: [
+      '#ff0141',
+      '#ffaf00',
+      '#47c200',
+      '#00a0ff',
+      '#8257e5',
+   ],
+    secondary: '#28262b',
+    white: "#181818", 
+    gray: "#414141",
+    grayLight: "#979797",
+    dark: "#d9d9d9", 
   },
-  secondary: {
-    primary: "#ff0141",
-    secondary: "#01c4ff",
-    white: "#1c1c1c",
-    gray: "#7a7a7a",
-    dark: "#f5f5f5",
-  },
-  inputGroup: {
-    border: "#7a7a7a",
-    background: "#fff",
+  font: {
+    size: {
+      lxx: '30px',
+      lx: '28px',
+      l: '26px',
+      m: '22px',
+      s: '18px',
+      xs: '14px',
+    },
+    family: {
+      primary: 'Roboto, sans-serif',
+      secondary: 'Roboto Slab, sans-serif',
+    },
+    button: {
+      radius: '4px',
+    },
   },
   backgroundImgUrl: backImgWhite,
-};
-
-//:root {
-//--color-red: #ff0141; /*#a51427;*/
-// --color-primary: #fd1824;
-// --color-ternary-b: #006eef;
-// --color-ternary: #01c4ff;
-
-// --color-white-a: #fefefe;
-// --color-gray-a: #7a7a7a;
-// --color-dark-a: #181818;
-
-// --color-white-b: #f5f5f5;
-// --color-gray-b: #414141;
-// --color-dark-b: #1c1c1c;
-//}
+}
