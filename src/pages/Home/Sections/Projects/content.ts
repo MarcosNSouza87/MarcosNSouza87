@@ -4,6 +4,7 @@ export interface IProject {
   description: {pt: string; en: string}
   image: string;
   link: string;
+  tags: string[];
 }
 
 export const listProjects:IProject[] = [
@@ -14,6 +15,7 @@ export const listProjects:IProject[] = [
     pt:'Ecoleta é um projeto que tem como objetivo conectar pessoas a empresas que coletam resíduos específicos, como lâmpadas, pilhas, óleo de cozinha, etc.'},
     image: '',
     link: '',
+    tags: ['React', 'React Native', 'Node.js', 'TypeScript', 'Expo', 'SQLite', 'Knex.js', 'Leaflet', 'React Leaflet', 'Axios', 'Celebrate', 'Multer', 'Express', 'Cors', 'Nodemon', 'VS Code', 'Insomnia', 'Yarn', 'Git', 'GitHub', 'Google Maps', 'IBGE API', 'Mailtrap', 'Heroku', 'Netlify'],
   },
   {
     id: 2,
@@ -22,6 +24,7 @@ export const listProjects:IProject[] = [
     pt:'Happy é um projeto que tem como objetivo conectar pessoas a orfanatos em sua região para fazer muitas crianças felizes.'},
     image: '',
     link: '',
+    tags: ['React', 'React Native', 'Node.js', 'TypeScript', 'Expo', 'SQLite', 'Knex.js', 'Leaflet', 'React Leaflet', 'Axios', 'Celebrate', 'Multer', 'Express', 'Cors', 'Nodemon', 'VS Code', 'Insomnia', 'Yarn', 'Git', 'GitHub', 'Google Maps', 'IBGE API', 'Mailtrap', 'Heroku', 'Netlify'],
   },
   {
     id: 3,
@@ -30,6 +33,7 @@ export const listProjects:IProject[] = [
     pt:'Proffy é um projeto que tem como objetivo conectar pessoas a professores em sua região para fazer muitas crianças felizes.'},
     image: '',
     link: '',
+    tags: ['React', 'React Native', 'Node.js', 'TypeScript', 'Expo', 'SQLite', 'Knex.js', 'Leaflet', 'React Leaflet', 'Axios', 'Celebrate', 'Multer', 'Express', 'Cors', 'Nodemon', 'VS Code', 'Insomnia', 'Yarn', 'Git', 'GitHub', 'Google Maps', 'IBGE API', 'Mailtrap', 'Heroku', 'Netlify'],
   },
   {
     id: 4,
@@ -38,6 +42,7 @@ export const listProjects:IProject[] = [
     pt:'Be The Hero é um projeto que tem como objetivo conectar pessoas a ONGs em sua região para fazer muitas crianças felizes.'},
     image: '',
     link: '',
+    tags: ['React', 'React Native', 'Node.js', 'TypeScript', 'Expo', 'SQLite', 'Knex.js', 'Leaflet', 'React Leaflet', 'Axios', 'Celebrate', 'Multer', 'Express', 'Cors', 'Nodemon', 'VS Code', 'Insomnia', 'Yarn', 'Git', 'GitHub', 'Google Maps', 'IBGE API', 'Mailtrap', 'Heroku', 'Netlify'],
   },
   {
     id: 5,
@@ -46,6 +51,7 @@ export const listProjects:IProject[] = [
     pt:'Move.it é um projeto que tem como objetivo conectar pessoas a ONGs em sua região para fazer muitas crianças felizes.'},
     image: '',
     link: '',
+    tags: ['React', 'React Native', 'Node.js', 'TypeScript', 'Expo', 'SQLite', 'Knex.js', 'Leaflet', 'React Leaflet', 'Axios', 'Celebrate', 'Multer', 'Express', 'Cors', 'Nodemon', 'VS Code', 'Insomnia', 'Yarn', 'Git', 'GitHub', 'Google Maps', 'IBGE API', 'Mailtrap', 'Heroku', 'Netlify'],
   },
   {
     id: 6,
@@ -54,6 +60,7 @@ export const listProjects:IProject[] = [
     pt:'Podcastr é um projeto que tem como objetivo conectar pessoas a ONGs em sua região para fazer muitas crianças felizes.'},
     image: '',
     link: '',
+    tags: ['React', 'React Native', 'Node.js', 'TypeScript', 'Expo', 'SQLite', 'Knex.js', 'Leaflet', 'React Leaflet', 'Axios', 'Celebrate', 'Multer', 'Express', 'Cors', 'Nodemon', 'VS Code', 'Insomnia', 'Yarn', 'Git', 'GitHub', 'Google Maps', 'IBGE API', 'Mailtrap', 'Heroku', 'Netlify'],
   },
   {
     id: 7,
@@ -62,6 +69,7 @@ export const listProjects:IProject[] = [
     pt:'Letmeask é um projeto que tem como objetivo conectar pessoas a ONGs em sua região para fazer muitas crianças felizes.'},
     image: '',
     link: '',
+    tags: ['React', 'React Native', 'Node.js', 'TypeScript', 'Expo', 'SQLite', 'Knex.js', 'Leaflet', 'React Leaflet', 'Axios', 'Celebrate', 'Multer', 'Express', 'Cors', 'Nodemon', 'VS Code', 'Insomnia', 'Yarn', 'Git', 'GitHub', 'Google Maps', 'IBGE API', 'Mailtrap', 'Heroku', 'Netlify'],
   },
   {
     id: 8,
@@ -70,6 +78,15 @@ export const listProjects:IProject[] = [
     pt:'dtmoney é um projeto que tem como objetivo conectar pessoas a ONGs em sua região para fazer muitas crianças felizes.'},
     image: '',
     link: '',
+    tags: ['React', 'React Native', 'Node.js', 'TypeScript', 'Expo', 'SQLite', 'Knex.js', 'Leaflet', 'React Leaflet', 'Axios', 'Celebrate', 'Multer', 'Express', 'Cors', 'Nodemon', 'VS Code', 'Insomnia', 'Yarn', 'Git', 'GitHub', 'Google Maps', 'IBGE API', 'Mailtrap', 'Heroku', 'Netlify'],
   },
-
+  {
+    id: 9,
+    title: 'PayFlow',
+    description: {pt:'PayFlow é um projeto que concentra todos os seus boletos no mesmo app.',
+    en:'PayFlow is a project that brings all your bills together in the same app.'},
+    image: '',
+    link: '',
+    tags: ['React Native','React-Navigation','Node.js', 'Typescript', 'Axios', 'React-Hook-form'],
+    },
 ]
