@@ -34,4 +34,23 @@ export const Button = styled.button<ButtonProps>`
 		border-bottom: 2px solid
 			${({ theme, color }) => theme.colors.selected[Number(color)]};
 	}
+	//responsive
+	@media (max-width: 768px) {
+
+		width: 90px;
+		div.label {
+			font-size: 11px;
+		}
+	}
+	@media (max-width: 576px) {
+		height: 75px;
+		width: 75px;
+		div.label {
+			display: none;
+		}
+		svg {
+			height: 26px;
+			width: 26px;
+		}
+	}
 `

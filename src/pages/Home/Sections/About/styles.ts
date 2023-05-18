@@ -18,7 +18,7 @@ export const Item = styled.div<IItem>`
 		font-size: 1.1rem;
 		font-weight: 400;
 		margin-top: 10px;
-		color: ${({ theme,color }) => theme.colors.selected[Number(color)]};
+		color: ${({ theme, color }) => theme.colors.selected[Number(color)]};
 		text-transform: uppercase;
 	}
 `
@@ -31,23 +31,47 @@ export const InfoDo = styled.div<IItem>`
 		font-size: 2rem;
 		font-weight: 400;
 		margin-bottom: 5px;
-		color: ${({ theme,color }) => theme.colors.selected[Number(color)]};
+		color: ${({ theme, color }) => theme.colors.selected[Number(color)]};
 		text-transform: uppercase;
+	}
+	@media (max-width: 768px) {
+		h3 {
+			font-size: 1.5rem;
+		}
+		h4{
+			font-size: 0.8rem;
+		}
+		svg {
+			width: 80px;
+			height: 80px;
+		}
+	}
+	@media (max-width: 576px) {
+		h4 {
+			font-size: 0.8rem;
+		}
 	}
 `
 
 export const InfoMain = styled.div<IItem>`
-	border-left: 5px solid ${({ theme,color }) => theme.colors.selected[Number(color)]};
+	border-left: 5px solid
+		${({ theme, color }) => theme.colors.selected[Number(color)]};
 	padding: 10px 20px;
 	h3 {
 		font-size: 2rem;
 		font-weight: 400;
 		margin-bottom: 5px;
-		color: ${({ theme,color }) => theme.colors.selected[Number(color)]};
+		color: ${({ theme, color }) => theme.colors.selected[Number(color)]};
 		text-transform: uppercase;
 	}
 	p {
 		font-size: 1.5rem;
+	}
+
+	@media (max-width: 768px) {
+		p {
+			font-size: 1rem;
+		}
 	}
 `
 
@@ -75,4 +99,3 @@ export const Row = styled.div`
 	justify-content: space-around;
 	margin: 15px 0;
 `
-

@@ -6,8 +6,43 @@ export interface IProject {
   link: string;
   tags: string[];
 }
+/*projetos realizados em empresas:{
+  Analitica Ensino Web,
+  Digigua Web,
+  Digigua Mobile,
+  banco Luso brasileiro Pessoas Jurídicas Web,
+  banco Luso brasileiro Empresas Mobile,
+  banco Luso brasileiro Empresas Backoffice,
+  banco Luso brasileiro Pessoas Físicas,
+  banco Luso brasileiro Pessoas Físicas Mobile,
+  banco Random Web,
+  banco Random Mobile,
+  UnimedLitoral Mobile,
+  PED cliente Mobile,
+  PED Prestadores Mobile,
+  Instituto Scheibel Mobile,
+  Ibitipoca Comuna Mobile,
+  Ultratel Web,
+  Ultratel Mobile,
+}\
+* projetos pessoais:{
+  Ecoleta,
+  Happy,
+  Proffy,
+  Be The Hero,
+  Move.it,
+  Podcastr,
+  Letmeask,
+  DtMoney,
+  Ig.news,
+  Dashgo,
+  DevQuiz,
+  StoreShop Web,
 
+}
+*/
 export const listProjects:IProject[] = [
+  
   {
     id: 1,
     title: 'Ecoleta',
