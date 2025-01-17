@@ -1,4 +1,4 @@
-import HomePage from './pages/Home'
+import RouteMain from './routes'
 import GlobalStyle from './styles/global'
 import './styles/global.ts'
 import { SettingsProvider } from './contexts/settingsContext'
@@ -9,7 +9,7 @@ export function AppPortfolio() {
 		<CustomThemeProvider>
 			<SettingsProvider>
 				<GlobalStyle />
-				<HomePage />
+				<RouteMain />
 			</SettingsProvider>
 		</CustomThemeProvider>
 	)

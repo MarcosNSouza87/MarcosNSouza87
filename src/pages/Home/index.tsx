@@ -1,28 +1,51 @@
 import React, { useContext } from 'react'
-import Header from '../../components/Header'
-import { HomeMainContent, HomePageContainer } from './styles'
-import * as Section from './Sections'
+import * as S from './styles'
+import ToggleSwitch from '../../components/ToggleSwitchLanguage'
+import Avatar from '../../assets/images/Avatar.jpg'
+import * as Icon from '../../assets/icons'
 import { SettingsContext } from '../../contexts/settingsContext'
-import Sidebar from '../../components/SideBar' 
-
-export default function HomePage() {
-	const [selectedSection, setSelectedSection] = React.useState('Home')
-	const { openSettings, setOpenSettings } = useContext(SettingsContext)
+const Home = () => {
+	const { language, color,theme } = useContext(SettingsContext)
+	const lng = language
 
 	return (
-		<HomePageContainer>
-			<Header
-				selectedSection={selectedSection}
-				setSelectedSection={setSelectedSection}
-			/>
-			{openSettings && <Sidebar setOpen={setOpenSettings} />}
-			<HomeMainContent>
-				{selectedSection === 'Home' && <Section.Home />}
-				{selectedSection === 'About' && <Section.About />}
-				{selectedSection === 'Experience' && <Section.Experience />}
-				{selectedSection === 'ContactMe' && <Section.ContactMe />}
-				{selectedSection === 'Projects' && <Section.Projects />}
-			</HomeMainContent>
-		</HomePageContainer>
+		<S.Container>
+			<S.Content>
+				<S.HomeContainer>
+					<S.HomeAvatar src={Avatar} />
+					<S.InfoContent color={color.toString()}>
+						<S.InfoMain color={color.toString()}>
+							<h1>Marcos Nunes de Souza</h1>
+							<h2>
+								{lng === 'pt' ? 'Desenvolvedor Front-End' : 'Front-End Developer'}
+							</h2>
+							<p>React, React-Native</p>
+						</S.InfoMain>
+						<S.Row>
+							<S.IconImg>
+							<Icon.Linkedin color={theme.colors.gray} />
+							</S.IconImg>
+							<S.IconImg>
+							<Icon.Github color={theme.colors.gray} />
+							</S.IconImg>
+						</S.Row>
+						<S.Row>
+							<S.Button className="red" color={color.toString()}>
+								{lng === 'pt' ? 'Curriculo' : 'RESUME'}
+							</S.Button>
+							<S.Button color={color.toString()}>
+								{lng === 'pt' ? 'Contato' : 'Hire Me'}
+							</S.Button>
+						</S.Row>
+					</S.InfoContent>
+				</S.HomeContainer>
+				<S.Footer>
+					<h4>{lng === 'pt' ? 'Escolha o idioma:' : 'Choose the language:'}</h4>
+					<ToggleSwitch />
+				</S.Footer>
+			</S.Content>
+		</S.Container>
 	)
 }
+
+export default Home

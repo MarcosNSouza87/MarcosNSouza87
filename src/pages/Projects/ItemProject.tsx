@@ -1,8 +1,8 @@
 import { IProject } from './content'
 import * as S from './styles'
-import NotFound from '../../../../assets/images/ImgNotFound.png'
+import NotFound from '../../assets/images/ImgNotFound.png'
 import { useContext } from 'react'
-import { SettingsContext } from '../../../../contexts/settingsContext'
+import { SettingsContext } from '../../contexts/settingsContext'
 
 const ItemProject = ({ id, description, title, image, link }: IProject) => {
 	const { color, language } = useContext(SettingsContext)

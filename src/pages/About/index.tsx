@@ -1,6 +1,6 @@
 import { useContext } from 'react'
-import * as Img from '../../../../assets/images'
-import { SettingsContext } from '../../../../contexts/settingsContext'
+import * as Img from '../../assets/images'
+import { SettingsContext } from '../../contexts/settingsContext'
 import * as S from './styles'
 
 export default function AboutPage() {

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import * as Icon from '../../../../assets/icons'
-import { SettingsContext } from '../../../../contexts/settingsContext'
+import * as Icon from '../../assets/icons'
+import { SettingsContext } from '../../contexts/settingsContext'
 import * as S from './styles'
 import { Conteudo } from './content'
 

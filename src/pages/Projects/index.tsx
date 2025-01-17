@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from 'react'
-import { SettingsContext } from '../../../../contexts/settingsContext'
+import { SettingsContext } from '../../contexts/settingsContext'
 import { listProjects } from './content'
 import ItemProject from './ItemProject'
 import * as S from './styles'
-import * as Icon from '../../../../assets/icons'
+import * as Icon from '../../assets/icons'
 
 export default function Projects() {
 	const { color, theme, language } = useContext(SettingsContext)

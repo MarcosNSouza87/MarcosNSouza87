@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import * as S from './styles'
-import { SettingsContext } from '../../../../contexts/settingsContext'
-import * as Icon from '../../../../assets/icons'
+import { SettingsContext } from '../../contexts/settingsContext'
+import * as Icon from '../../assets/icons'
 
 const ContactMe = () => {
 	const { theme } = useContext(SettingsContext)
