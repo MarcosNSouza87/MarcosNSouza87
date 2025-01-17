@@ -1,53 +1,73 @@
-import { useContext, useEffect, useState } from 'react'
-import { SettingsContext } from '../../contexts/settingsContext'
-import { listProjects } from './content'
-import ItemProject from './ItemProject'
-import * as S from './styles'
-import * as Icon from '../../assets/icons'
+import { useContext, useEffect, useState } from 'react';
+import { SettingsContext } from '../../contexts/settingsContext';
+import { IProject, listProjects } from './content';
+import ItemProject from './ItemProject';
+import * as S from './styles';
+import * as Icon from '../../assets/icons';
+import FilterListProject from '../../components/FilterListProjects';
 
 export default function Projects() {
-	const { color, theme, language } = useContext(SettingsContext)
-	const [page, setPage] = useState(0)
-	const [countPage, setCountPage] = useState(0)
-	const [width, setWidth] = useState(window.innerWidth)
+	const { color, theme } = useContext(SettingsContext);
+	const [page, setPage] = useState(0);
+	const [countPage, setCountPage] = useState(0);
+	const [width, setWidth] = useState(window.innerWidth);
 	const [countPrjsPg, setCountPrjsPg] = useState(
 		width > 992 ? 3 : width > 768 ? 2 : 1,
-	)
-	useEffect(() => {
-		setCountPage(Math.ceil(listProjects.length / countPrjsPg))
-		setCountPrjsPg(width > 992 ? 3 : width > 768 ? 2 : 1)
-	}, [width])
+	);
+	const [filteredList, setFilteredList] = useState<IProject[]>(listProjects);
+	const [filter, setFilter] = useState<string>('');
+
+
 
 	const setPagination = (type: string) => {
 		if (type === 'next') {
-			if (page < countPage - 1) setPage(page + 1)
+			if (page < countPage - 1) setPage(page + 1);
 		} else {
-			if (page > 0) setPage(page - 1)
+			if (page > 0) setPage(page - 1);
 		}
-	}
+	};
 	const updateDimensions = () => {
-		setWidth(window.innerWidth)
-	}
+		setWidth(window.innerWidth);
+	};
+
 
 	useEffect(() => {
-		window.addEventListener('resize', updateDimensions)
-		return () => window.removeEventListener('resize', updateDimensions)
-	}, [])
+		setCountPage(Math.ceil(listProjects.length / countPrjsPg));
+		setCountPrjsPg(width > 992 ? 3 : width > 768 ? 2 : 1);
+	}, [width]);
+
+
+	useEffect(() => {
+		window.addEventListener('resize', updateDimensions);
+		return () => window.removeEventListener('resize', updateDimensions);
+	}, []);
+
+	useEffect(() => {
+		if(filter !== ''){
+			const lowerCaseFilter = filter.toLowerCase();
+			const filtered = listProjects.filter(
+        (project) =>
+          project.title.toLowerCase().includes(lowerCaseFilter) 
+      );
+			setFilteredList(filtered);
+    } else {
+      setFilteredList(listProjects);
+    }
+	},[filter])
 
 	return (
 		<S.Container>
-			<S.Title color={color.toString()}>
-				{language === 'en' ? 'Projects' : 'Projetos'}
-			</S.Title>
+			<FilterListProject list={listProjects} setSearch={setFilter} />
+
 			<S.HorizontalCarousel>
-				{listProjects.map((project, index) => {
+				{filteredList.map((project, index) => {
 					if (
 						index >= page * countPrjsPg &&
 						index < page * countPrjsPg + countPrjsPg
 					) {
-						return <ItemProject key={project.id} {...project} />
+						return <ItemProject key={project.id} {...project} />;
 					} else {
-						return null
+						return null;
 					}
 				})}
 			</S.HorizontalCarousel>
@@ -78,5 +98,5 @@ export default function Projects() {
 				</S.IconPagination>
 			</S.Pagination>
 		</S.Container>
-	)
+	);
 }
