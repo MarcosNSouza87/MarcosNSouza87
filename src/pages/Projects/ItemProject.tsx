@@ -5,7 +5,13 @@ import { useContext } from 'react';
 import { SettingsContext } from '../../contexts/settingsContext';
 import IconArrowRight from '../../assets/icons/IconArrowRight';
 
-const ItemProject = ({ id, description, title, image, link }: IProject) => {
+type IItmProject = {
+	project: IProject;
+	onShowDetails: () => void;
+};
+
+const ItemProject = ({ project, onShowDetails }: IItmProject) => {
+	const { id, description, title, image, link } = project;
 	const { color, language } = useContext(SettingsContext);
 	return (
 		<S.Card color={color.toString()} key={id}>
@@ -17,7 +23,7 @@ const ItemProject = ({ id, description, title, image, link }: IProject) => {
 				<h5>Tecnologia: Mobile</h5>
 			</S.Info>
 			<S.BtnShowDetails color={color.toString()}>
-				<S.BtnShowCol>
+				<S.BtnShowCol onClick={onShowDetails}>
 					<div className="title">Detalhes</div>
 					<div className="icons">
 						<IconArrowRight color={'#ffffff55'} />

@@ -5,6 +5,7 @@ import ItemProject from './ItemProject';
 import * as S from './styles';
 import * as Icon from '../../assets/icons';
 import FilterListProject from '../../components/FilterListProjects';
+import ModalDetailsProject from '../../components/ModalDetailsProject';
 
 export default function Projects() {
 	const { color, theme } = useContext(SettingsContext);
@@ -16,8 +17,8 @@ export default function Projects() {
 	);
 	const [filteredList, setFilteredList] = useState<IProject[]>(listProjects);
 	const [filter, setFilter] = useState<string>('');
-
-
+	const [showModal, setShowModal] = useState<boolean>(false);
+	const [selectedProject, setSelectedProject] = useState<IProject>();
 
 	const setPagination = (type: string) => {
 		if (type === 'next') {
@@ -30,12 +31,10 @@ export default function Projects() {
 		setWidth(window.innerWidth);
 	};
 
-
 	useEffect(() => {
 		setCountPage(Math.ceil(listProjects.length / countPrjsPg));
 		setCountPrjsPg(width > 992 ? 3 : width > 768 ? 2 : 1);
 	}, [width]);
-
 
 	useEffect(() => {
 		window.addEventListener('resize', updateDimensions);
@@ -43,29 +42,54 @@ export default function Projects() {
 	}, []);
 
 	useEffect(() => {
-		if(filter !== ''){
+		if (filter !== '') {
 			const lowerCaseFilter = filter.toLowerCase();
-			const filtered = listProjects.filter(
-        (project) =>
-          project.title.toLowerCase().includes(lowerCaseFilter) 
-      );
+			const filtered = listProjects.filter((project) =>
+				project.title.toLowerCase().includes(lowerCaseFilter),
+			);
 			setFilteredList(filtered);
-    } else {
-      setFilteredList(listProjects);
-    }
-	},[filter])
+		} else {
+			setFilteredList(listProjects);
+		}
+	}, [filter]);
+
+	const SelectPrj = (id: number) => {
+		const result = listProjects.find((itm) => itm.id === id);
+		if(result !== undefined){
+			setSelectedProject(result);
+		}
+	}
+
+	useEffect(() => {
+		if(selectedProject !== undefined){
+			setShowModal(true)
+		}
+	},[selectedProject])
+
+	const handleOnCloseModal = () => {
+		setShowModal(false);
+		setSelectedProject(undefined);
+	}
 
 	return (
 		<S.Container>
 			<FilterListProject list={listProjects} setSearch={setFilter} />
-
+			{showModal && selectedProject !== undefined && <ModalDetailsProject selectedProject={selectedProject} onClose={handleOnCloseModal} />}
 			<S.HorizontalCarousel>
 				{filteredList.map((project, index) => {
 					if (
 						index >= page * countPrjsPg &&
 						index < page * countPrjsPg + countPrjsPg
 					) {
-						return <ItemProject key={project.id} {...project} />;
+						return (
+							<ItemProject
+								key={project.id}
+								project={project}
+								onShowDetails={() => {
+									SelectPrj(project.id)
+								}}
+							/>
+						);
 					} else {
 						return null;
 					}
