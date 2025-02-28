@@ -18,10 +18,6 @@ export default function RouteMain() {
 			{openSettings && <Sidebar setOpen={setOpenSettings} />}
 			<HomeMainContent>
 				{selectedSection === 'Home' && <Section.Home />}
-				{selectedSection === 'About' && <Section.About />}
-				{selectedSection === 'Experience' && <Section.Experience />}
-				{selectedSection === 'ContactMe' && <Section.ContactMe />}
-				{selectedSection === 'Projects' && <Section.Projects />}
 			</HomeMainContent>
 		</HomePageContainer>
 	)

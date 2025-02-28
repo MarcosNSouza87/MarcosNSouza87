@@ -19,7 +19,7 @@ textarea {
 body{
   background-size: cover;
   color: #212529;
-  background-image: url(${({ theme }) => theme.backgroundImgUrl});
+  //background-image: url(${({ theme }) => theme.backgroundImgUrl});
   background-color: ${({ theme }) => theme.background};
 }
 

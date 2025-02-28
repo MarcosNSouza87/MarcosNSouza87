@@ -3,11 +3,11 @@ import { ITheme } from '../../@types/theme';
 
 export const Light: ITheme = {
   title: 'light',
-  background: '#fefefe',
+  background: '#d9d9e9',
   colors: {
     selected: [
       '#ff0141',
-      '#ffaf00',
+      '#e49c00',
       '#47c200',
       '#00a0ff',
       '#8257e5',
@@ -16,7 +16,7 @@ export const Light: ITheme = {
     white: "#181818", 
     gray: "#414141",
     grayLight: "#979797",
-    dark: "#d9d9d9", 
+    dark: "#d9d9e9", 
   },
   font: {
     size: {

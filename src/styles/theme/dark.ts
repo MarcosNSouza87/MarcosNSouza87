@@ -3,7 +3,7 @@ import backImgDark from '../../assets/images/background_dark_theme.svg'
 
 export const Dark: ITheme = {
 	title: 'dark',
-	background: '#181818',
+	background: '#28262E',
 	colors: {
 		selected: [
 			 '#ff0141', // 0
@@ -14,7 +14,7 @@ export const Dark: ITheme = {
 			 //'#6c01ff', // 5
 			 //'#ff01d1', // 6
 		],
-		secondary: '#28262b',
+		secondary: '#333',
 		white: '#F4EDE8',
 		gray: '#7a7a7a',
 		grayLight: '#979797',
