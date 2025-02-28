@@ -7,6 +7,7 @@ interface IItem {
 export const HorizontalCarousel = styled.div`
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	width: 100vw;
 	margin-top: 50px;
@@ -37,6 +38,7 @@ export const Card = styled.div<IItem>`
 	margin: 0 10px;
 	background-color: ${({ theme }) => theme.colors.dark};
 	border-radius: 16px;
+	margin-bottom: 20px;
 	h3 {
 		font-size: 16px;
 		color: ${({ theme }) => theme.colors.white};

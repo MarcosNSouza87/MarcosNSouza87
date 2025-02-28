@@ -13,7 +13,7 @@ export default function Projects() {
 	const [countPage, setCountPage] = useState(0);
 	const [width, setWidth] = useState(window.innerWidth);
 	const [countPrjsPg, setCountPrjsPg] = useState(
-		width > 992 ? 3 : width > 768 ? 2 : 1,
+		width > 992 ? 6 : width > 768 ? 2 : 1,
 	);
 	const [filteredList, setFilteredList] = useState<IProject[]>(listProjects);
 	const [filter, setFilter] = useState<string>('');
@@ -33,7 +33,7 @@ export default function Projects() {
 
 	useEffect(() => {
 		setCountPage(Math.ceil(listProjects.length / countPrjsPg));
-		setCountPrjsPg(width > 992 ? 3 : width > 768 ? 2 : 1);
+		setCountPrjsPg(width > 992 ? 6 : width > 768 ? 2 : 1);
 	}, [width]);
 
 	useEffect(() => {
