@@ -23,8 +23,7 @@ Sou formado em Engenharia da Computação desde *(2017)*. Tenho mais de 8 anos d
 **Design/Tools:**  Visual Studio Code, Git, Figma, Adobe Photoshop, Inkscape, entre outros.
 
 ### 📈 Minhas Estatísticas no GitHub:
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=MarcosNSouza87&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="Marcos GitHub stats"/> 
+<p align="center"> 
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarcosNSouza87&layout=compact&theme=radical" alt="Marcos Top Languages"/>
 </p>
 
