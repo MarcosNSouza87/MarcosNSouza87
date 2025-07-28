@@ -36,9 +36,15 @@ Sou formado em Engenharia da Computação desde *(2017)*. Tenho mais de 8 anos d
 
 ### 📫 Contato:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-MarcosNSouza87-0e76a8?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcosnsouza) 
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-(13)%209911-79703-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?phone=5513991179703) 
-[![Instagram](https://img.shields.io/badge/@nipfhire-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/nipfhire) 
-[![Facebook](https://img.shields.io/badge/Facebook-3b5998?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/markos.nunnes.87/) 
+<p align="left">
+  <a href="https://www.linkedin.com/in/marcosnsouza" alt="Linkedin">
+  <img src="https://img.shields.io/badge/-Linkedin-0e76a8?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/marcosnsouza" /></a>
+
+  <a href="https://www.outlook.com/nipfhire/" alt="Instagram">
+  <img src="https://img.shields.io/badge/-Instagram-DF0174?style=for-the-badge&logo=instagram&logoColor=white&link=https://www.instagram.com/nipfhire/"/></a>
+  
+   <a href="https://api.whatsapp.com/send?phone=5513991427167" alt="Whatsapp">
+  <img src="https://img.shields.io/badge/-Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=5513991427167"/></a>
+</p>  
 
 *Vamos conversar! Sinta-se à vontade para me adicionar ou enviar uma mensagem. Estou aberto a projetos, oportunidades de trabalho ou apenas trocar idéias.* 🚀
