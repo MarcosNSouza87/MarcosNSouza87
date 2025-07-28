@@ -1,50 +1,44 @@
-<p align="left"> 
-  Hello, my name is Marcos I am <strong>FullStack Developer</strong> and <strong>UI/UX Designer</strong>.<br>
-  I am computer engineer since 2017.
+## Olá! Eu sou o Marcos 👋 
+
+Sou formado em Engenharia da Computação desde *(2017)*. Tenho mais de 8 anos de experiência em **desenvolvimento de software**, criando aplicações *web* e **mobile** modernas com interfaces intuitivas e foco na melhor experiência do usuário.  
+<br/>
+
+- 💼 **Atuação:** Atualmente trabalho como desenvolvedor *freelancer*, construindo projetos de **front-end (web e mobile)** e design de interfaces. Estou sempre aberto a novas oportunidades e desafios em desenvolvimento de software.  
+- 🎓 **Formação:** Engenheiro da Computação graduado em 2017.  
+- 🌎 **Localização:** Santos, São Paulo, Brasil (disponível para trabalho remoto e presencial).  
+- 🎯 **Interesses:** React, React Native, TypeScript, Node.js, Design de Interfaces, e aprender novas tecnologias.
+
+### 🚀 Tecnologias e Ferramentas:
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) 
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) 
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) 
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) 
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white) 
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) 
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) 
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) 
+
+**Design/Tools:**  Visual Studio Code, Git, Figma, Adobe Photoshop, Inkscape, entre outros.
+
+### 📈 Minhas Estatísticas no GitHub:
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=MarcosNSouza87&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="Marcos GitHub stats"/> 
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarcosNSouza87&layout=compact&theme=radical" alt="Marcos Top Languages"/>
 </p>
 
-<p align="left">
-  🚀 technologies i use!
-</p>
+### 💼 Portfólio & Projetos:
+- 🔗 **Portfólio:** [marcosnsouza87.github.io/MarcosNSouza87](https://marcosnsouza87.github.io/MarcosNSouza87/) – *Projetos completos e cases de UI/UX.*  
+- **Be The Hero:** Aplicação Full Stack (Node.js, React, React Native) conectando ONGs a doadores. **[Repo](https://github.com/MarcosNSouza87/be-the-hero)**  
+- **Happy:** Plataforma desenvolvida na NLW#3 para conectar pessoas a orfanatos locais. *(React, Node.js)* **[Repo](https://github.com/MarcosNSouza87/Happy-NLW-3)**  
+- **COVID-19 Tracker:** Dashboard em React + API mostrando estatísticas da pandemia em tempo real. **[Repo](https://github.com/MarcosNSouza87/covid-19-tracker)**  
 
-Link Portfolio :  https://marcosnsouza87.github.io/MarcosNSouza87/
-<div>
-  
-  <img src="https://xesque.rocketseat.dev/platform/tech/reactjs.svg" />
-  <img src="https://xesque.rocketseat.dev/platform/tech/react-native.svg" />
-  <img src="https://xesque.rocketseat.dev/platform/tech/typescript.svg" />
-  <img src="https://xesque.rocketseat.dev/platform/tech/node.svg" />
-  
-  <img src="https://xesque.rocketseat.dev/platform/tech/redux.svg" />
-  <img src="https://xesque.rocketseat.dev/platform/tech/graphql.svg" />
-  <img src="https://xesque.rocketseat.dev/platform/tech/nextjs.svg" />
+### 📫 Contato:
 
-  <img src="https://xesque.rocketseat.dev/platform/tech/html5.svg" alt="html 5"/>
-  <img src="https://xesque.rocketseat.dev/platform/tech/css3.svg"  alt="CSS 3"/>
-  <img src="https://xesque.rocketseat.dev/platform/tech/javascript.svg" alt="Javascript"/>
-  
-</div>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-MarcosNSouza87-0e76a8?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcosnsouza) 
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-(13)%209911-79703-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?phone=5513991179703) 
+[![Instagram](https://img.shields.io/badge/@nipfhire-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/nipfhire) 
+[![Facebook](https://img.shields.io/badge/Facebook-3b5998?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/markos.nunnes.87/) 
 
-<p align="left">
-  💼 Tools: <strong>Visual Studio Code, PhotoShop, Figma, Inkscape e GitHub.</strong>
-</p>
-
-<p align="left">
-  💌 If you want to carry out a project with me (or make small talk), don't hesitate to send me a message: 
-</p>
-
-<p align="left">
-  <a href="https://www.linkedin.com/in/marcosnsouza" alt="Linkedin">
-  <img src="https://img.shields.io/badge/-Linkedin-0e76a8?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/marcosnsouza" /></a>
-
-  <a href="https://www.facebook.com/markos.nunnes.87/" alt="Facebook">
-  <img src="https://img.shields.io/badge/-Facebook-3b5998?style=for-the-badge&logo=facebook&logoColor=white&link=https://www.facebook.com/markos.nunnes.87/"/></a>
-
-  <a href="https://www.outlook.com/nipfhire/" alt="Instagram">
-  <img src="https://img.shields.io/badge/-Instagram-DF0174?style=for-the-badge&logo=instagram&logoColor=white&link=https://www.instagram.com/nipfhire/"/></a>
-  
-   <a href="https://api.whatsapp.com/send?phone=5513991179703" alt="Whatsapp">
-  <img src="https://img.shields.io/badge/-Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=5513991179703"/></a>
-</p>  
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MarcosNSouza87&layout=compact&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+*Vamos conversar! Sinta-se à vontade para me adicionar ou enviar uma mensagem. Estou aberto a projetos, oportunidades de trabalho ou apenas trocar idéias.* 🚀
