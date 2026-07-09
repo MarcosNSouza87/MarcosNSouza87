@@ -7,7 +7,6 @@
 </div>
 
 ### 👋 About Me
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=FFD60A&center=true&vCenter=true&width=600&lines=Fullstack+Developer;React+%2B+React+Native+%2B+iOS;Building+AI-powered+products)](https://git.io/typing-svg)
 
 Fullstack Developer with **8+ years of experience** building web and mobile applications — from fintech and banking systems to healthcare and hospitality platforms. Specialized in **React**, **React Native**, and **Node.js**, with hands-on experience in native **iOS (Swift/SwiftUI)** development.
 
