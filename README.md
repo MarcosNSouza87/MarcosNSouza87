@@ -48,8 +48,7 @@ Fullstack Developer with **8+ years of experience** building web and mobile appl
 
 Building AI-powered product features (LLM integration, prompt engineering) and expanding into fullstack web architecture alongside mobile development.
 
-<br/>
-![Profile Views](https://komarev.com/ghpvc/?username=MarcosNSouza87&color=FFD60A&style=for-the-badge)
+<br/> 
 
 ### 📫 Get in Touch
 
