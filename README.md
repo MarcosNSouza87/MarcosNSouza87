@@ -15,6 +15,10 @@ Fullstack Developer with **8+ years of experience** building web and mobile appl
 
 <br/>
 
+![Status](https://img.shields.io/badge/Status-Open_to_Work-FFD60A?style=for-the-badge)
+
+<br/>
+
 ### 🚀 Tech Stack
 
 <p align="left">
@@ -29,19 +33,6 @@ Fullstack Developer with **8+ years of experience** building web and mobile appl
 </p>
 
 **Tools:** VS Code · Git · Figma · Xcode · Firebase
-
-<br/>
-
-### 💼 Featured Projects
-
-🔗 **Portfolio:** [marcosnsouza87.github.io](https://marcosnsouza87.github.io/MarcosNSouza87/)
-
-<!-- Update links as each project ships -->
-| Project | Description | Stack |
-|---|---|---|
-| **Smart Grocery List** | Mobile app with AI-powered item suggestions based on purchase history | React Native · Node.js · PostgreSQL · Claude API |
-| **Fintech Dashboard** | Credit card and installment management dashboard with real-time transaction tracking | React · Redux · Recharts |
-| **Multi-Tenant Retail App** | White-label mobile app serving multiple store brands from a single codebase | React Native · Styled Components |
 
 <br/>
 
