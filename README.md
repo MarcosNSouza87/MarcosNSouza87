@@ -2,6 +2,8 @@
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=FFD60A&height=180&section=header&text=Marcos%20Nunes%20de%20Souza&fontSize=42&fontColor=1A1A1A&animation=fadeIn&fontAlignY=40&desc=Fullstack%20Developer%20%7C%20React%20%2F%20React%20Native%20%2F%20iOS&descAlignY=58&descSize=18&descColor=1A1A1A)
 
+![Status](https://img.shields.io/badge/Status-Open_to_Work-FFD60A?style=for-the-badge)
+
 </div>
 
 ### 👋 About Me
@@ -12,10 +14,16 @@ Fullstack Developer with **8+ years of experience** building web and mobile appl
 - 🎓 **Background:** B.Eng. in Computer Engineering (2017) · Previously worked on production apps for banking, retail white-label platforms, healthcare, and hospitality
 - 🌎 **Location:** Santos, São Paulo, Brazil — open to remote work worldwide
 - 🎯 **Focus:** React, React Native, TypeScript, Node.js, Swift/SwiftUI, and AI-powered product features
+- 🗣️ **Languages:** Portuguese (Native) · English (Intermediate) · Spanish (Basic)
 
 <br/>
 
-![Status](https://img.shields.io/badge/Status-Open_to_Work-FFD60A?style=for-the-badge)
+### 💼 Experience Highlights
+
+- 🏦 **Fintech:** Built and maintained banking apps handling secure payments and transactions (Banco Luso Brasileiro, Banco Random)
+- 🛒 **Retail:** Developed a white-label multi-brand app used across major supermarket chains (Cencosud)
+- 🏥 **Healthcare:** Built patient management and scheduling systems for clinics and health providers
+- 📱 **Native iOS:** Shipped 3+ published apps using Swift/SwiftUI with MVVM architecture
 
 <br/>
 
@@ -33,6 +41,12 @@ Fullstack Developer with **8+ years of experience** building web and mobile appl
 </p>
 
 **Tools:** VS Code · Git · Figma · Xcode · Firebase
+
+<br/>
+
+### 🌱 Currently Exploring
+
+Building AI-powered product features (LLM integration, prompt engineering) and expanding into fullstack web architecture alongside mobile development.
 
 <br/>
 
