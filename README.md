@@ -32,15 +32,6 @@ Fullstack Developer with **8+ years of experience** building web and mobile appl
 
 <br/>
 
-### 📈 GitHub Stats
-
-<div align="center">
-<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarcosNSouza87&layout=compact&hide_border=true&title_color=FFD60A&icon_color=FFD60A&text_color=c9d1d9&bg_color=0d1117" alt="Top Languages"/>
-<img height="165em" src="https://github-readme-stats.vercel.app/api?username=MarcosNSouza87&show_icons=true&hide_border=true&title_color=FFD60A&icon_color=FFD60A&text_color=c9d1d9&bg_color=0d1117" alt="GitHub Stats"/>
-</div>
-
-<br/>
-
 ### 💼 Featured Projects
 
 🔗 **Portfolio:** [marcosnsouza87.github.io](https://marcosnsouza87.github.io/MarcosNSouza87/)
