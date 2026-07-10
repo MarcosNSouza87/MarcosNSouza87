@@ -5,6 +5,7 @@
 </div>
 
 ## 👋 About Me
+<img src="https://capsule-render.vercel.app/api?type=rect&color=FFD60A&height=2&section=header"/>
 
 Senior Software Engineer with **8+ years of experience** building scalable web and mobile applications. Experienced across fintech, banking, retail, healthcare, and hospitality, delivering production-ready software from architecture to deployment.
 
