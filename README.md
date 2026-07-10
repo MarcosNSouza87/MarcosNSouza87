@@ -1,77 +1,157 @@
-<div align="center" >
+<div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=FFD60A&height=180&section=header&text=Marcos%20Nunes%20de%20Souza&fontSize=42&fontColor=1A1A1A&animation=fadeIn&fontAlignY=40&desc=Senior%20Software%20Engineer%20%7C%20React%20%E2%80%A2%20React%20Native%20%E2%80%A2%20PHP%20%E2%80%A2%20Node.js&descAlignY=58&descSize=18&descColor=1A1A1A)
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FFD60A&height=220&section=header&text=Marcos%20Nunes%20de%20Souza&fontSize=42&fontColor=1A1A1A&animation=fadeIn&fontAlignY=38&desc=Senior%20Software%20Engineer&descAlignY=58&descSize=20&descColor=1A1A1A"/>
 
+<h2>👋 Hi, I'm Marcos</h2>
 
+<h3>Senior Software Engineer</h3>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=FFD60A&height=2&section=header"/>
-
-
-  
-Senior Software Engineer with **8+ years of experience** building scalable web and mobile applications. Experienced across fintech, banking, retail, healthcare, and hospitality, delivering production-ready software from architecture to deployment.
-
-My core expertise is **React**, **React Native**, **PHP/Laravel**, **Node.js**, and **TypeScript**, with additional experience developing native iOS applications using **Swift** and **SwiftUI**.
-
-- 💼 **Currently:** Freelance Software Engineer building scalable web and mobile products from concept to production.
-- 🎓 **Education:** Bachelor's Degree in Computer Engineering (2017).
-- 🌎 **Location:** Santos, São Paulo, Brazil — Open to remote opportunities worldwide.
-- 🚀 **Main Stack:** React, React Native, PHP (Laravel), Node.js, TypeScript, PostgreSQL.
-- 🤖 **Interests:** AI-powered applications, scalable architectures, cloud technologies, and mobile development.
-- 🗣️ **Languages:** Portuguese (Native) · English (Intermediate) · Spanish (Basic)
-
----
-
-## 💼 Professional Highlights
-
-- 🏦 Developed and maintained secure banking applications for financial institutions.
-- 🛒 Built white-label retail solutions used by major supermarket chains.
-- 🏥 Developed healthcare systems focused on patient management and scheduling.
-- 📱 Delivered production-ready mobile applications using React Native and native iOS technologies.
-- ⚙️ Designed and implemented REST APIs and full-stack solutions using PHP/Laravel and Node.js.
-
----
-
-## 🚀 Tech Stack
-
-<p align="left">
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-<img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
-<img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=FFD60A" />
-<img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" />
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+<p>
+React • React Native • PHP • Laravel • Node.js • TypeScript
 </p>
 
-**Tools:** Git • Docker • VS Code • Xcode • Firebase • Figma • GitHub Actions
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3500&pause=1000&color=FFD60A&center=true&vCenter=true&width=700&lines=Building+Scalable+Web+%26+Mobile+Applications;Full+Stack+Developer;React+%7C+React+Native+%7C+PHP+%7C+Node.js;Open+to+Remote+Opportunities+Worldwide" />
 
----
+<br><br>
 
-## 🌱 Currently Learning
-
-- Artificial Intelligence & LLM Integration
-- Cloud Architecture
-- Docker & CI/CD
-- Scalable Backend Systems
-- Software Architecture & Design Patterns
-
----
-
-## 📫 Let's Connect
-
-<p align="left">
 <a href="https://www.linkedin.com/in/marcosnsouza">
-<img src="https://img.shields.io/badge/-LinkedIn-FFD60A?style=for-the-badge&logo=linkedin&logoColor=1A1A1A"/>
+<img src="https://img.shields.io/badge/LinkedIn-FFD60A?style=for-the-badge&logo=linkedin&logoColor=1A1A1A"/>
 </a>
 
 <a href="mailto:m_souza@outlook.com.br">
-<img src="https://img.shields.io/badge/-Email-FFD60A?style=for-the-badge&logo=gmail&logoColor=1A1A1A"/>
+<img src="https://img.shields.io/badge/Email-FFD60A?style=for-the-badge&logo=gmail&logoColor=1A1A1A"/>
 </a>
-</p>
+
 </div>
 
-> **Open to remote full-time opportunities and freelance projects across Europe and worldwide.**
+---
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=FFD60A&height=100&section=footer)
+# 🚀 About Me
+
+```yaml
+Name: Marcos Nunes de Souza
+
+Location:
+  Santos - São Paulo - Brazil 🇧🇷
+
+Role:
+  Senior Software Engineer
+
+Experience:
+  8+ years
+
+Education:
+  Computer Engineering
+
+Focus:
+  Web
+  Mobile
+  Backend
+  AI
+
+Available:
+  Remote Worldwide 🌍
+```
+
+---
+
+# ⚡ What I Build
+
+✅ Enterprise Applications
+
+✅ Mobile Applications
+
+✅ SaaS Platforms
+
+✅ REST APIs
+
+✅ AI-powered Features
+
+✅ Scalable Backend Systems
+
+---
+
+# 💼 Industries
+
+🏦 Fintech
+
+🛒 Retail
+
+🏥 Healthcare
+
+🏨 Hospitality
+
+📱 Mobile Apps
+
+---
+
+# 🛠 Tech Stack
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=react,reactivex,ts,js,nodejs,php,laravel,nextjs,swift,postgres,mysql,mongodb,firebase,docker,git,github,vscode,figma"/>
+
+</p>
+
+---
+
+# 📊 GitHub
+
+<p align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=MarcosNSouza87&show_icons=true&theme=transparent&hide_border=true"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarcosNSouza87&layout=compact&hide_border=true"/>
+
+</p>
+
+---
+
+# 🔥 Contribution Streak
+
+<p align="center">
+
+<img src="https://streak-stats.demolab.com?user=MarcosNSouza87&theme=transparent&hide_border=true"/>
+
+</p>
+
+---
+
+# 🏆 GitHub Trophies
+
+<p align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=MarcosNSouza87&theme=flat&margin-w=10&no-frame=true"/>
+
+</p>
+
+---
+
+# 📈 Activity Graph
+
+<p align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=MarcosNSouza87&bg_color=ffffff00&color=FFD60A&line=FFD60A&point=FFFFFF&hide_border=true"/>
+
+</p>
+
+---
+
+# 🚀 Featured Projects
+
+| Project | Description |
+|----------|-------------|
+| 📱 Mobile Banking | React Native + Node.js |
+| 🛒 White Label Retail | React Native + Laravel |
+| 🏥 Healthcare Platform | React + PHP |
+| 🤖 AI Applications | LLM + Prompt Engineering |
+
+---
+
+<div align="center">
+
+<h3>Let's build something amazing together 🚀</h3>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FFD60A&height=120&section=footer"/>
+
+</div>
