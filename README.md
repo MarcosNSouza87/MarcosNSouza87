@@ -95,33 +95,11 @@ Available:
 
 ---
 
-# 📊 GitHub
-
-<p align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=MarcosNSouza87&show_icons=true&theme=transparent&hide_border=true"/>
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarcosNSouza87&layout=compact&hide_border=true"/>
-
-</p>
-
----
-
 # 🔥 Contribution Streak
 
 <p align="center">
 
 <img src="https://streak-stats.demolab.com?user=MarcosNSouza87&theme=transparent&hide_border=true"/>
-
-</p>
-
----
-
-# 🏆 GitHub Trophies
-
-<p align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=MarcosNSouza87&theme=flat&margin-w=10&no-frame=true"/>
 
 </p>
 
