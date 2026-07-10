@@ -1,12 +1,13 @@
-<div  >
+<div align="center" >
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=FFD60A&height=180&section=header&text=Marcos%20Nunes%20de%20Souza&fontSize=42&fontColor=1A1A1A&animation=fadeIn&fontAlignY=40&desc=Senior%20Software%20Engineer%20%7C%20React%20%E2%80%A2%20React%20Native%20%E2%80%A2%20PHP%20%E2%80%A2%20Node.js&descAlignY=58&descSize=18&descColor=1A1A1A)
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=FFD60A&height=120&text=Tech%20Stack&fontColor=1A1A1A"/>
 <img src="https://capsule-render.vercel.app/api?type=rect&color=FFD60A&height=2&section=header"/>
 
+<div>
+  
 Senior Software Engineer with **8+ years of experience** building scalable web and mobile applications. Experienced across fintech, banking, retail, healthcare, and hospitality, delivering production-ready software from architecture to deployment.
 
 My core expertise is **React**, **React Native**, **PHP/Laravel**, **Node.js**, and **TypeScript**, with additional experience developing native iOS applications using **Swift** and **SwiftUI**.
@@ -69,6 +70,7 @@ My core expertise is **React**, **React Native**, **PHP/Laravel**, **Node.js**, 
 <img src="https://img.shields.io/badge/-Email-FFD60A?style=for-the-badge&logo=gmail&logoColor=1A1A1A"/>
 </a>
 </p>
+</div>
 
 > **Open to remote full-time opportunities and freelance projects across Europe and worldwide.**
 
