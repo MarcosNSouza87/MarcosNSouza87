@@ -1,10 +1,10 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=FFD60A&height=180&section=header&text=Marcos%20Nunes%20de%20Souza&fontSize=42&fontColor=1A1A1A&animation=fadeIn&fontAlignY=40&desc=Fullstack%20Developer%20%7C%20React%20%2F%20React%20Native%20%2F%20iOS&descAlignY=58&descSize=18&descColor=1A1A1A)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=FFD60A&height=180&section=header&text=Marcos%20Nunes%20de%20Souza&fontSize=42&fontColor=1A1A1A&animation=fadeIn&fontAlignY=40&desc=Senior%20Software%20Engineer&descAlignY=58&descSize=20&descColor=1A1A1A)
  
 
 </div>
-
+Senior Software Engineer | React • React Native • PHP • Node.js
 ### 👋 About Me
 
 Fullstack Developer with **8+ years of experience** building web and mobile applications — from fintech and banking systems to healthcare and hospitality platforms. Specialized in **React**, **React Native**, and **Node.js**, with hands-on experience in native **iOS (Swift/SwiftUI)** development.
